@@ -3,7 +3,7 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ãÓÇÚÏ ÍÓÇÈÇÊ</title>
+  <title>Ù…Ø³Ø§Ø¹Ø¯ Ø­Ø³Ø§Ø¨Ø§Øª</title>
   <script src="/_sdk/data_sdk.js"></script>
   <script src="/_sdk/element_sdk.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -118,210 +118,210 @@
  <body class="min-h-full" style="background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);"><!-- Confirmation Modal -->
   <div id="confirmation-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center modal-overlay">
    <div class="glass-card rounded-2xl p-6 max-w-md w-full mx-4">
-    <h3 class="text-xl font-bold text-white mb-4" id="modal-title">ÊÃßíÏ ÇáÚãáíÉ</h3>
-    <p class="text-slate-300 mb-6" id="modal-message">åá ÃäÊ ãÊÃßÏ ãä åĞå ÇáÚãáíÉ¿</p>
-    <div class="flex gap-3"><button onclick="confirmAction()" class="glass-button-primary flex-1 py-2 rounded-xl font-bold">? ÊÃßíÏ</button> <button onclick="closeModal()" class="glass-button-secondary flex-1 py-2 rounded-xl font-bold">? ÅáÛÇÁ</button>
+    <h3 class="text-xl font-bold text-white mb-4" id="modal-title">ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø¹Ù…Ù„ÙŠØ©</h3>
+    <p class="text-slate-300 mb-6" id="modal-message">Ù‡Ù„ Ø£Ù†Øª Ù…ØªØ£ÙƒØ¯ Ù…Ù† Ù‡Ø°Ù‡ Ø§Ù„Ø¹Ù…Ù„ÙŠØ©ØŸ</p>
+    <div class="flex gap-3"><button onclick="confirmAction()" class="glass-button-primary flex-1 py-2 rounded-xl font-bold">âœ“ ØªØ£ÙƒÙŠØ¯</button> <button onclick="closeModal()" class="glass-button-secondary flex-1 py-2 rounded-xl font-bold">âœ— Ø¥Ù„ØºØ§Ø¡</button>
     </div>
    </div>
   </div>
   <div class="min-h-full p-6">
    <header class="glass-card rounded-2xl p-6 mb-6">
-    <h1 class="text-4xl font-bold text-white mb-2">?? ãÓÇÚÏ ÍÓÇÈÇÊ</h1>
-    <p class="text-slate-300">äÙÇã ãÊßÇãá áÅÏÇÑÉ ÇáãÈíÚÇÊ æÇáãÔÊÑíÇÊ æÇáãÎÒæä</p>
+    <h1 class="text-4xl font-bold text-white mb-2">ğŸŒ¾ Ù…Ø³Ø§Ø¹Ø¯ Ø­Ø³Ø§Ø¨Ø§Øª</h1>
+    <p class="text-slate-300">Ù†Ø¸Ø§Ù… Ù…ØªÙƒØ§Ù…Ù„ Ù„Ø¥Ø¯Ø§Ø±Ø© Ø§Ù„Ù…Ø¨ÙŠØ¹Ø§Øª ÙˆØ§Ù„Ù…Ø´ØªØ±ÙŠØ§Øª ÙˆØ§Ù„Ù…Ø®Ø²ÙˆÙ†</p>
    </header>
    <nav class="glass-card rounded-2xl p-4 mb-6">
-    <div class="flex flex-wrap gap-2"><button onclick="showTab('dashboard')" class="glass-nav-button px-4 py-2 rounded-xl transition active" id="tab-dashboard">?? áæÍÉ ÇáÊÍßã</button> <button onclick="showTab('sales')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-sales">?? ÇáãÈíÚÇÊ</button> <button onclick="showTab('purchases')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-purchases">?? ÇáãÔÊÑíÇÊ</button> <button onclick="showTab('expenses')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-expenses">?? ÇáãÕÑæİÇÊ</button> <button onclick="showTab('receivables')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-receivables">?? ÇáĞãã</button> <button onclick="showTab('customers')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-customers">?? ÇáÚãáÇÁ</button> <button onclick="showTab('suppliers')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-suppliers">?? ÇáãæÑÏíä</button> <button onclick="showTab('products')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-products">?? ÇáãäÊÌÇÊ</button> <button onclick="showTab('inventory')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-inventory">?? ÇáãÎÒæä</button> <button onclick="showTab('accounts')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-accounts">?? ÇáÍÓÇÈÇÊ</button> <button onclick="showTab('reports')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-reports">?? ÇáÊŞÇÑíÑ</button> <button onclick="showTab('crm')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-crm">?? CRM</button> <button onclick="showTab('settings')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-settings">?? ÇáÅÚÏÇÏÇÊ</button>
+    <div class="flex flex-wrap gap-2"><button onclick="showTab('dashboard')" class="glass-nav-button px-4 py-2 rounded-xl transition active" id="tab-dashboard">ğŸ“Š Ù„ÙˆØ­Ø© Ø§Ù„ØªØ­ÙƒÙ…</button> <button onclick="showTab('sales')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-sales">ğŸ’° Ø§Ù„Ù…Ø¨ÙŠØ¹Ø§Øª</button> <button onclick="showTab('purchases')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-purchases">ğŸ›’ Ø§Ù„Ù…Ø´ØªØ±ÙŠØ§Øª</button> <button onclick="showTab('expenses')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-expenses">ğŸ’¸ Ø§Ù„Ù…ØµØ±ÙˆÙØ§Øª</button> <button onclick="showTab('receivables')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-receivables">ğŸ’¼ Ø§Ù„Ø°Ù…Ù…</button> <button onclick="showTab('customers')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-customers">ğŸ‘¥ Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡</button> <button onclick="showTab('suppliers')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-suppliers">ğŸ­ Ø§Ù„Ù…ÙˆØ±Ø¯ÙŠÙ†</button> <button onclick="showTab('products')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-products">ğŸ“¦ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª</button> <button onclick="showTab('inventory')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-inventory">ğŸ“Š Ø§Ù„Ù…Ø®Ø²ÙˆÙ†</button> <button onclick="showTab('accounts')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-accounts">ğŸ’¼ Ø§Ù„Ø­Ø³Ø§Ø¨Ø§Øª</button> <button onclick="showTab('reports')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-reports">ğŸ“ˆ Ø§Ù„ØªÙ‚Ø§Ø±ÙŠØ±</button> <button onclick="showTab('crm')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-crm">ğŸ¤ CRM</button> <button onclick="showTab('settings')" class="glass-nav-button px-4 py-2 rounded-xl transition" id="tab-settings">âš™ï¸ Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª</button>
     </div>
    </nav><!-- Dashboard -->
    <div id="content-dashboard" class="tab-content">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
      <div class="glass-stat-card rounded-2xl p-6">
       <div class="text-green-400 text-3xl mb-2">
-       ??
+       ğŸ’°
       </div>
       <div class="text-slate-300 text-sm mb-1">
-       ÅÌãÇáí ÇáãÈíÚÇÊ
+       Ø¥Ø¬Ù…Ø§Ù„ÙŠ Ø§Ù„Ù…Ø¨ÙŠØ¹Ø§Øª
       </div>
       <div class="text-3xl font-bold text-white" id="dash-total-sales">
-       0 Ì.ã
+       0 Ø¬.Ù…
       </div>
      </div>
      <div class="glass-stat-card rounded-2xl p-6">
       <div class="text-green-400 text-3xl mb-2">
-       ??
+       ğŸ“Š
       </div>
       <div class="text-slate-300 text-sm mb-1">
-       ãÌãá ÇáÑÈÍ
+       Ù…Ø¬Ù…Ù„ Ø§Ù„Ø±Ø¨Ø­
       </div>
       <div class="text-3xl font-bold text-white" id="dash-gross-profit">
-       0 Ì.ã
+       0 Ø¬.Ù…
       </div>
      </div>
      <div class="glass-stat-card rounded-2xl p-6">
       <div class="text-green-400 text-3xl mb-2">
-       ??
+       ğŸ’¸
       </div>
       <div class="text-slate-300 text-sm mb-1">
-       ÅÌãÇáí ÇáãÕÑæİÇÊ
+       Ø¥Ø¬Ù…Ø§Ù„ÙŠ Ø§Ù„Ù…ØµØ±ÙˆÙØ§Øª
       </div>
       <div class="text-3xl font-bold text-white" id="dash-total-expenses">
-       0 Ì.ã
+       0 Ø¬.Ù…
       </div>
      </div>
      <div class="glass-stat-card rounded-2xl p-6">
       <div class="text-green-400 text-3xl mb-2">
-       ??
+       ğŸ“ˆ
       </div>
       <div class="text-slate-300 text-sm mb-1">
-       ÕÇİí ÇáÑÈÍ
+       ØµØ§ÙÙŠ Ø§Ù„Ø±Ø¨Ø­
       </div>
       <div class="text-3xl font-bold text-white" id="dash-net-profit">
-       0 Ì.ã
+       0 Ø¬.Ù…
       </div>
      </div>
     </div><!-- Financial Ratios -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
      <div class="glass-card rounded-2xl p-6">
-      <h3 class="text-lg font-bold text-white mb-3">?? åÇãÔ ãÌãá ÇáÑÈÍ</h3>
+      <h3 class="text-lg font-bold text-white mb-3">ğŸ“Š Ù‡Ø§Ù…Ø´ Ù…Ø¬Ù…Ù„ Ø§Ù„Ø±Ø¨Ø­</h3>
       <div class="text-3xl font-bold text-green-400" id="dash-gross-margin">
        0%
       </div>
      </div>
      <div class="glass-card rounded-2xl p-6">
-      <h3 class="text-lg font-bold text-white mb-3">?? åÇãÔ ÕÇİí ÇáÑÈÍ</h3>
+      <h3 class="text-lg font-bold text-white mb-3">ğŸ“ˆ Ù‡Ø§Ù…Ø´ ØµØ§ÙÙŠ Ø§Ù„Ø±Ø¨Ø­</h3>
       <div class="text-3xl font-bold text-green-400" id="dash-net-margin">
        0%
       </div>
      </div>
      <div class="glass-card rounded-2xl p-6">
-      <h3 class="text-lg font-bold text-white mb-3">?? äŞØÉ ÇáÊÚÇÏá</h3>
+      <h3 class="text-lg font-bold text-white mb-3">âš–ï¸ Ù†Ù‚Ø·Ø© Ø§Ù„ØªØ¹Ø§Ø¯Ù„</h3>
       <div class="text-3xl font-bold text-yellow-400" id="dash-break-even">
-       0 Ì.ã
+       0 Ø¬.Ù…
       </div>
      </div>
     </div><!-- Accounts Summary -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
      <div class="glass-stat-card rounded-2xl p-6">
       <div class="text-green-400 text-2xl mb-2">
-       ??
+       ğŸ’µ
       </div>
       <div class="text-slate-300 text-sm mb-1">
-       ÇáÕäÏæŞ
+       Ø§Ù„ØµÙ†Ø¯ÙˆÙ‚
       </div>
       <div class="text-2xl font-bold text-white" id="dash-cash-balance">
-       0 Ì.ã
+       0 Ø¬.Ù…
       </div>
      </div>
      <div class="glass-stat-card rounded-2xl p-6">
       <div class="text-green-400 text-2xl mb-2">
-       ??
+       ğŸ¦
       </div>
       <div class="text-slate-300 text-sm mb-1">
-       ÇáÈäß
+       Ø§Ù„Ø¨Ù†Ùƒ
       </div>
       <div class="text-2xl font-bold text-white" id="dash-bank-balance">
-       0 Ì.ã
+       0 Ø¬.Ù…
       </div>
      </div>
      <div class="glass-stat-card rounded-2xl p-6">
       <div class="text-green-400 text-2xl mb-2">
-       ??
+       ğŸ“±
       </div>
       <div class="text-slate-300 text-sm mb-1">
-       İæÏÇİæä ßÇÔ
+       ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´
       </div>
       <div class="text-2xl font-bold text-white" id="dash-vodafone-balance">
-       0 Ì.ã
+       0 Ø¬.Ù…
       </div>
      </div>
      <div class="glass-stat-card rounded-2xl p-6">
       <div class="text-green-400 text-2xl mb-2">
-       ??
+       ğŸ’³
       </div>
       <div class="text-slate-300 text-sm mb-1">
-       ÇäÓÊÇ ÈÇí
+       Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ
       </div>
       <div class="text-2xl font-bold text-white" id="dash-instapay-balance">
-       0 Ì.ã
+       0 Ø¬.Ù…
       </div>
      </div>
      <div class="glass-stat-card rounded-2xl p-6">
       <div class="text-red-400 text-2xl mb-2">
-       ??
+       ğŸ‘¥
       </div>
       <div class="text-slate-300 text-sm mb-1">
-       Ğãã ÇáÚãáÇÁ
+       Ø°Ù…Ù… Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡
       </div>
       <div class="text-2xl font-bold text-white" id="dash-customers-debt">
-       0 Ì.ã
+       0 Ø¬.Ù…
       </div>
      </div>
      <div class="glass-stat-card rounded-2xl p-6">
       <div class="text-red-400 text-2xl mb-2">
-       ??
+       ğŸ­
       </div>
       <div class="text-slate-300 text-sm mb-1">
-       Ğãã ÇáãæÑÏíä
+       Ø°Ù…Ù… Ø§Ù„Ù…ÙˆØ±Ø¯ÙŠÙ†
       </div>
       <div class="text-2xl font-bold text-white" id="dash-suppliers-debt">
-       0 Ì.ã
+       0 Ø¬.Ù…
       </div>
      </div>
     </div>
    </div><!-- Sales -->
    <div id="content-sales" class="tab-content hidden">
     <div class="glass-card rounded-2xl p-6 mb-6">
-     <h2 class="text-2xl font-bold text-white mb-4">? ÅÖÇİÉ İÇÊæÑÉ ãÈíÚÇÊ</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">â• Ø¥Ø¶Ø§ÙØ© ÙØ§ØªÙˆØ±Ø© Ù…Ø¨ÙŠØ¹Ø§Øª</h2>
      <form id="sales-form" class="space-y-4">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-       <div><label class="block text-slate-300 mb-2">ÇáÚãíá</label> <input type="text" id="sale-customer-search" class="glass-input w-full px-4 py-3 rounded-xl mb-2" placeholder="ÇÈÍË Úä Úãíá..."> <select id="sale-customer" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="">ÇÎÊÑ Úãíá</option> </select>
+       <div><label class="block text-slate-300 mb-2">Ø§Ù„Ø¹Ù…ÙŠÙ„</label> <input type="text" id="sale-customer-search" class="glass-input w-full px-4 py-3 rounded-xl mb-2" placeholder="Ø§Ø¨Ø­Ø« Ø¹Ù† Ø¹Ù…ÙŠÙ„..."> <select id="sale-customer" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="">Ø§Ø®ØªØ± Ø¹Ù…ÙŠÙ„</option> </select>
        </div>
-       <div><label class="block text-slate-300 mb-2">ØÑíŞÉ ÇáÏİÚ</label> <select id="sale-payment-method" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="äŞÏí">äŞÏí</option> <option value="ÂÌá">ÂÌá</option> <option value="İæÏÇİæä ßÇÔ">İæÏÇİæä ßÇÔ</option> <option value="ÇäÓÊÇ ÈÇí">ÇäÓÊÇ ÈÇí</option> </select>
+       <div><label class="block text-slate-300 mb-2">Ø·Ø±ÙŠÙ‚Ø© Ø§Ù„Ø¯ÙØ¹</label> <select id="sale-payment-method" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="Ù†Ù‚Ø¯ÙŠ">Ù†Ù‚Ø¯ÙŠ</option> <option value="Ø¢Ø¬Ù„">Ø¢Ø¬Ù„</option> <option value="ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´">ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´</option> <option value="Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ">Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ</option> </select>
        </div>
       </div>
       <div id="sale-items">
        <div class="sale-item glass-card p-4 rounded-xl mb-4">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3">
-         <div><label class="block text-slate-300 mb-2">ÇáãäÊÌ</label> <select class="sale-product glass-input w-full px-4 py-3 rounded-xl" required> <option value="">ÇÎÊÑ ãäÊÌ</option> </select>
+         <div><label class="block text-slate-300 mb-2">Ø§Ù„Ù…Ù†ØªØ¬</label> <select class="sale-product glass-input w-full px-4 py-3 rounded-xl" required> <option value="">Ø§Ø®ØªØ± Ù…Ù†ØªØ¬</option> </select>
          </div>
-         <div><label class="block text-slate-300 mb-2">ÇáßãíÉ</label> <input type="number" class="sale-quantity glass-input w-full px-4 py-3 rounded-xl" min="1" step="0.01" required>
+         <div><label class="block text-slate-300 mb-2">Ø§Ù„ÙƒÙ…ÙŠØ©</label> <input type="number" class="sale-quantity glass-input w-full px-4 py-3 rounded-xl" min="1" step="0.01" required>
          </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-         <div><label class="block text-slate-300 mb-2">ÇáÓÚÑ</label> <input type="number" class="sale-price glass-input w-full px-4 py-3 rounded-xl" step="0.01" required>
+         <div><label class="block text-slate-300 mb-2">Ø§Ù„Ø³Ø¹Ø±</label> <input type="number" class="sale-price glass-input w-full px-4 py-3 rounded-xl" step="0.01" required>
          </div>
-         <div><label class="block text-slate-300 mb-2">ÇáÎÕã %</label> <input type="number" class="sale-discount glass-input w-full px-4 py-3 rounded-xl" min="0" max="100" step="0.01" value="0">
+         <div><label class="block text-slate-300 mb-2">Ø§Ù„Ø®ØµÙ… %</label> <input type="number" class="sale-discount glass-input w-full px-4 py-3 rounded-xl" min="0" max="100" step="0.01" value="0">
          </div>
-         <div><label class="block text-slate-300 mb-2">ÇáÅÌãÇáí</label> <input type="text" class="sale-item-total glass-input w-full px-4 py-3 rounded-xl" readonly>
+         <div><label class="block text-slate-300 mb-2">Ø§Ù„Ø¥Ø¬Ù…Ø§Ù„ÙŠ</label> <input type="text" class="sale-item-total glass-input w-full px-4 py-3 rounded-xl" readonly>
          </div>
         </div>
        </div>
       </div>
-      <div class="flex gap-3"><button type="button" onclick="addSaleItem()" class="glass-button-primary px-4 py-2 rounded-xl">? ÅÖÇİÉ ÈäÏ ÌÏíÏ</button>
+      <div class="flex gap-3"><button type="button" onclick="addSaleItem()" class="glass-button-primary px-4 py-2 rounded-xl">â• Ø¥Ø¶Ø§ÙØ© Ø¨Ù†Ø¯ Ø¬Ø¯ÙŠØ¯</button>
       </div>
       <div class="glass-card p-4 rounded-xl">
-       <div class="flex justify-between items-center"><span class="text-white font-bold text-xl">ÇáÅÌãÇáí Çáßáí:</span> <span class="text-green-400 font-bold text-2xl" id="sale-grand-total">0 Ì.ã</span>
+       <div class="flex justify-between items-center"><span class="text-white font-bold text-xl">Ø§Ù„Ø¥Ø¬Ù…Ø§Ù„ÙŠ Ø§Ù„ÙƒÙ„ÙŠ:</span> <span class="text-green-400 font-bold text-2xl" id="sale-grand-total">0 Ø¬.Ù…</span>
        </div>
-      </div><button type="submit" class="glass-button-primary w-full py-3 rounded-xl font-bold">?? ÍİÙ ÇáİÇÊæÑÉ</button>
+      </div><button type="submit" class="glass-button-primary w-full py-3 rounded-xl font-bold">ğŸ’¾ Ø­ÙØ¸ Ø§Ù„ÙØ§ØªÙˆØ±Ø©</button>
      </form>
     </div>
     <div class="glass-card rounded-2xl p-6">
-     <h2 class="text-2xl font-bold text-white mb-4">?? ÓÌá ÇáãÈíÚÇÊ</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">ğŸ“‹ Ø³Ø¬Ù„ Ø§Ù„Ù…Ø¨ÙŠØ¹Ø§Øª</h2>
      <div class="overflow-x-auto">
       <table class="w-full">
        <thead class="glass-table-header">
         <tr>
-         <th class="px-4 py-3 text-right text-white">ÑŞã ÇáİÇÊæÑÉ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáÊÇÑíÎ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáÚãíá</th>
-         <th class="px-4 py-3 text-right text-white">ÇáÅÌãÇáí</th>
-         <th class="px-4 py-3 text-right text-white">ÇáÏİÚ</th>
-         <th class="px-4 py-3 text-right text-white">ÅÌÑÇÁÇÊ</th>
+         <th class="px-4 py-3 text-right text-white">Ø±Ù‚Ù… Ø§Ù„ÙØ§ØªÙˆØ±Ø©</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„ØªØ§Ø±ÙŠØ®</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ø¹Ù…ÙŠÙ„</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ø¥Ø¬Ù…Ø§Ù„ÙŠ</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ø¯ÙØ¹</th>
+         <th class="px-4 py-3 text-right text-white">Ø¥Ø¬Ø±Ø§Ø¡Ø§Øª</th>
         </tr>
        </thead>
        <tbody id="sales-list">
         <tr class="glass-table-row">
-         <td colspan="6" class="px-4 py-8 text-center text-slate-400">áÇ ÊæÌÏ ãÈíÚÇÊ ÈÚÏ</td>
+         <td colspan="6" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ø¨ÙŠØ¹Ø§Øª Ø¨Ø¹Ø¯</td>
         </tr>
        </tbody>
       </table>
@@ -330,55 +330,55 @@
    </div><!-- Purchases -->
    <div id="content-purchases" class="tab-content hidden">
     <div class="glass-card rounded-2xl p-6 mb-6">
-     <h2 class="text-2xl font-bold text-white mb-4">? ÅÖÇİÉ İÇÊæÑÉ ãÔÊÑíÇÊ</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">â• Ø¥Ø¶Ø§ÙØ© ÙØ§ØªÙˆØ±Ø© Ù…Ø´ØªØ±ÙŠØ§Øª</h2>
      <form id="purchase-form" class="space-y-4">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-       <div><label class="block text-slate-300 mb-2">ÇáãæÑÏ</label> <select id="purchase-supplier" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="">ÇÎÊÑ ãæÑÏ</option> </select>
+       <div><label class="block text-slate-300 mb-2">Ø§Ù„Ù…ÙˆØ±Ø¯</label> <select id="purchase-supplier" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="">Ø§Ø®ØªØ± Ù…ÙˆØ±Ø¯</option> </select>
        </div>
-       <div><label class="block text-slate-300 mb-2">ØÑíŞÉ ÇáÏİÚ</label> <select id="purchase-payment-method" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="äŞÏí">äŞÏí</option> <option value="ÂÌá">ÂÌá</option> <option value="İæÏÇİæä ßÇÔ">İæÏÇİæä ßÇÔ</option> <option value="ÇäÓÊÇ ÈÇí">ÇäÓÊÇ ÈÇí</option> </select>
+       <div><label class="block text-slate-300 mb-2">Ø·Ø±ÙŠÙ‚Ø© Ø§Ù„Ø¯ÙØ¹</label> <select id="purchase-payment-method" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="Ù†Ù‚Ø¯ÙŠ">Ù†Ù‚Ø¯ÙŠ</option> <option value="Ø¢Ø¬Ù„">Ø¢Ø¬Ù„</option> <option value="ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´">ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´</option> <option value="Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ">Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ</option> </select>
        </div>
       </div>
       <div id="purchase-items">
        <div class="purchase-item glass-card p-4 rounded-xl mb-4">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3">
-         <div><label class="block text-slate-300 mb-2">ÇÓã ÇáãäÊÌ/ÇáÎÇã</label> <input type="text" class="purchase-product-name glass-input w-full px-4 py-3 rounded-xl" placeholder="ÃÏÎá ÇÓã ÇáãäÊÌ" required>
+         <div><label class="block text-slate-300 mb-2">Ø§Ø³Ù… Ø§Ù„Ù…Ù†ØªØ¬/Ø§Ù„Ø®Ø§Ù…</label> <input type="text" class="purchase-product-name glass-input w-full px-4 py-3 rounded-xl" placeholder="Ø£Ø¯Ø®Ù„ Ø§Ø³Ù… Ø§Ù„Ù…Ù†ØªØ¬" required>
          </div>
-         <div><label class="block text-slate-300 mb-2">ÇáßãíÉ</label> <input type="number" class="purchase-quantity glass-input w-full px-4 py-3 rounded-xl" min="1" step="0.01" required>
+         <div><label class="block text-slate-300 mb-2">Ø§Ù„ÙƒÙ…ÙŠØ©</label> <input type="number" class="purchase-quantity glass-input w-full px-4 py-3 rounded-xl" min="1" step="0.01" required>
          </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-         <div><label class="block text-slate-300 mb-2">ÇáÓÚÑ</label> <input type="number" class="purchase-price glass-input w-full px-4 py-3 rounded-xl" step="0.01" required>
+         <div><label class="block text-slate-300 mb-2">Ø§Ù„Ø³Ø¹Ø±</label> <input type="number" class="purchase-price glass-input w-full px-4 py-3 rounded-xl" step="0.01" required>
          </div>
-         <div><label class="block text-slate-300 mb-2">ÇáÅÌãÇáí</label> <input type="text" class="purchase-item-total glass-input w-full px-4 py-3 rounded-xl" readonly>
+         <div><label class="block text-slate-300 mb-2">Ø§Ù„Ø¥Ø¬Ù…Ø§Ù„ÙŠ</label> <input type="text" class="purchase-item-total glass-input w-full px-4 py-3 rounded-xl" readonly>
          </div>
         </div>
        </div>
       </div>
-      <div class="flex gap-3"><button type="button" onclick="addPurchaseItem()" class="glass-button-primary px-4 py-2 rounded-xl">? ÅÖÇİÉ ÈäÏ ÌÏíÏ</button>
+      <div class="flex gap-3"><button type="button" onclick="addPurchaseItem()" class="glass-button-primary px-4 py-2 rounded-xl">â• Ø¥Ø¶Ø§ÙØ© Ø¨Ù†Ø¯ Ø¬Ø¯ÙŠØ¯</button>
       </div>
       <div class="glass-card p-4 rounded-xl">
-       <div class="flex justify-between items-center"><span class="text-white font-bold text-xl">ÇáÅÌãÇáí Çáßáí:</span> <span class="text-green-400 font-bold text-2xl" id="purchase-grand-total">0 Ì.ã</span>
+       <div class="flex justify-between items-center"><span class="text-white font-bold text-xl">Ø§Ù„Ø¥Ø¬Ù…Ø§Ù„ÙŠ Ø§Ù„ÙƒÙ„ÙŠ:</span> <span class="text-green-400 font-bold text-2xl" id="purchase-grand-total">0 Ø¬.Ù…</span>
        </div>
-      </div><button type="submit" class="glass-button-primary w-full py-3 rounded-xl font-bold">?? ÍİÙ ÇáİÇÊæÑÉ</button>
+      </div><button type="submit" class="glass-button-primary w-full py-3 rounded-xl font-bold">ğŸ’¾ Ø­ÙØ¸ Ø§Ù„ÙØ§ØªÙˆØ±Ø©</button>
      </form>
     </div>
     <div class="glass-card rounded-2xl p-6">
-     <h2 class="text-2xl font-bold text-white mb-4">?? ÓÌá ÇáãÔÊÑíÇÊ</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">ğŸ“‹ Ø³Ø¬Ù„ Ø§Ù„Ù…Ø´ØªØ±ÙŠØ§Øª</h2>
      <div class="overflow-x-auto">
       <table class="w-full">
        <thead class="glass-table-header">
         <tr>
-         <th class="px-4 py-3 text-right text-white">ÑŞã ÇáİÇÊæÑÉ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáÊÇÑíÎ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáãæÑÏ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáÅÌãÇáí</th>
-         <th class="px-4 py-3 text-right text-white">ÇáÏİÚ</th>
-         <th class="px-4 py-3 text-right text-white">ÅÌÑÇÁÇÊ</th>
+         <th class="px-4 py-3 text-right text-white">Ø±Ù‚Ù… Ø§Ù„ÙØ§ØªÙˆØ±Ø©</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„ØªØ§Ø±ÙŠØ®</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ù…ÙˆØ±Ø¯</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ø¥Ø¬Ù…Ø§Ù„ÙŠ</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ø¯ÙØ¹</th>
+         <th class="px-4 py-3 text-right text-white">Ø¥Ø¬Ø±Ø§Ø¡Ø§Øª</th>
         </tr>
        </thead>
        <tbody id="purchases-list">
         <tr class="glass-table-row">
-         <td colspan="6" class="px-4 py-8 text-center text-slate-400">áÇ ÊæÌÏ ãÔÊÑíÇÊ ÈÚÏ</td>
+         <td colspan="6" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ø´ØªØ±ÙŠØ§Øª Ø¨Ø¹Ø¯</td>
         </tr>
        </tbody>
       </table>
@@ -387,76 +387,76 @@
    </div><!-- Expenses -->
    <div id="content-expenses" class="tab-content hidden">
     <div class="glass-card rounded-2xl p-6 mb-6">
-     <h2 class="text-2xl font-bold text-white mb-4">? ÅÖÇİÉ ãÕÑæİ</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">â• Ø¥Ø¶Ø§ÙØ© Ù…ØµØ±ÙˆÙ</h2>
      <form id="expense-form" class="space-y-4">
-      <div><label class="block text-slate-300 mb-2">äæÚ ÇáãÕÑæİ</label> <select id="expense-category" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="">ÇÎÊÑ äæÚ ÇáãÕÑæİ</option> </select>
+      <div><label class="block text-slate-300 mb-2">Ù†ÙˆØ¹ Ø§Ù„Ù…ØµØ±ÙˆÙ</label> <select id="expense-category" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="">Ø§Ø®ØªØ± Ù†ÙˆØ¹ Ø§Ù„Ù…ØµØ±ÙˆÙ</option> </select>
       </div>
-      <div><label class="block text-slate-300 mb-2">ÇáæÕİ</label> <input type="text" id="expense-description" class="glass-input w-full px-4 py-3 rounded-xl" required>
+      <div><label class="block text-slate-300 mb-2">Ø§Ù„ÙˆØµÙ</label> <input type="text" id="expense-description" class="glass-input w-full px-4 py-3 rounded-xl" required>
       </div>
-      <div><label class="block text-slate-300 mb-2">ÇáãÈáÛ</label> <input type="number" id="expense-amount" class="glass-input w-full px-4 py-3 rounded-xl" step="0.01" min="0" required>
+      <div><label class="block text-slate-300 mb-2">Ø§Ù„Ù…Ø¨Ù„Øº</label> <input type="number" id="expense-amount" class="glass-input w-full px-4 py-3 rounded-xl" step="0.01" min="0" required>
       </div>
-      <div><label class="block text-slate-300 mb-2">ØÑíŞÉ ÇáÏİÚ</label> <select id="expense-payment-method" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="äŞÏí">äŞÏí</option> <option value="Èäß">Èäß</option> <option value="İæÏÇİæä ßÇÔ">İæÏÇİæä ßÇÔ</option> <option value="ÇäÓÊÇ ÈÇí">ÇäÓÊÇ ÈÇí</option> </select>
-      </div><button type="submit" class="glass-button-primary w-full py-3 rounded-xl font-bold">?? ÍİÙ ÇáãÕÑæİ</button>
+      <div><label class="block text-slate-300 mb-2">Ø·Ø±ÙŠÙ‚Ø© Ø§Ù„Ø¯ÙØ¹</label> <select id="expense-payment-method" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="Ù†Ù‚Ø¯ÙŠ">Ù†Ù‚Ø¯ÙŠ</option> <option value="Ø¨Ù†Ùƒ">Ø¨Ù†Ùƒ</option> <option value="ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´">ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´</option> <option value="Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ">Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ</option> </select>
+      </div><button type="submit" class="glass-button-primary w-full py-3 rounded-xl font-bold">ğŸ’¾ Ø­ÙØ¸ Ø§Ù„Ù…ØµØ±ÙˆÙ</button>
      </form>
     </div>
     <div class="glass-card rounded-2xl p-6">
-     <h2 class="text-2xl font-bold text-white mb-4">?? ÓÌá ÇáãÕÑæİÇÊ</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">ğŸ“‹ Ø³Ø¬Ù„ Ø§Ù„Ù…ØµØ±ÙˆÙØ§Øª</h2>
      <div class="overflow-x-auto">
       <table class="w-full">
        <thead class="glass-table-header">
         <tr>
-         <th class="px-4 py-3 text-right text-white">ÇáÊÇÑíÎ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáäæÚ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáæÕİ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáãÈáÛ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáÏİÚ</th>
-         <th class="px-4 py-3 text-right text-white">ÅÌÑÇÁÇÊ</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„ØªØ§Ø±ÙŠØ®</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ù†ÙˆØ¹</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„ÙˆØµÙ</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ù…Ø¨Ù„Øº</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ø¯ÙØ¹</th>
+         <th class="px-4 py-3 text-right text-white">Ø¥Ø¬Ø±Ø§Ø¡Ø§Øª</th>
         </tr>
        </thead>
        <tbody id="expenses-list">
         <tr class="glass-table-row">
-         <td colspan="6" class="px-4 py-8 text-center text-slate-400">áÇ ÊæÌÏ ãÕÑæİÇÊ ÈÚÏ</td>
+         <td colspan="6" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…ØµØ±ÙˆÙØ§Øª Ø¨Ø¹Ø¯</td>
         </tr>
        </tbody>
       </table>
      </div>
     </div>
-   </div><!-- Receivables (ÇáĞãã) -->
+   </div><!-- Receivables (Ø§Ù„Ø°Ù…Ù…) -->
    <div id="content-receivables" class="tab-content hidden">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6"><!-- Customer Receivables -->
      <div class="glass-card rounded-2xl p-6">
-      <h2 class="text-2xl font-bold text-white mb-4">?? Ğãã ÇáÚãáÇÁ</h2>
+      <h2 class="text-2xl font-bold text-white mb-4">ğŸ‘¥ Ø°Ù…Ù… Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡</h2>
       <div class="overflow-x-auto">
        <table class="w-full">
         <thead class="glass-table-header">
          <tr>
-          <th class="px-4 py-3 text-right text-white">ÇáÚãíá</th>
-          <th class="px-4 py-3 text-right text-white">ÇáãÏíæäíÉ</th>
-          <th class="px-4 py-3 text-right text-white">ÅÌÑÇÁÇÊ</th>
+          <th class="px-4 py-3 text-right text-white">Ø§Ù„Ø¹Ù…ÙŠÙ„</th>
+          <th class="px-4 py-3 text-right text-white">Ø§Ù„Ù…Ø¯ÙŠÙˆÙ†ÙŠØ©</th>
+          <th class="px-4 py-3 text-right text-white">Ø¥Ø¬Ø±Ø§Ø¡Ø§Øª</th>
          </tr>
         </thead>
         <tbody id="customer-receivables-list">
          <tr class="glass-table-row">
-          <td colspan="3" class="px-4 py-8 text-center text-slate-400">áÇ ÊæÌÏ Ğãã</td>
+          <td colspan="3" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ØªÙˆØ¬Ø¯ Ø°Ù…Ù…</td>
          </tr>
         </tbody>
        </table>
       </div>
      </div><!-- Supplier Payables -->
      <div class="glass-card rounded-2xl p-6">
-      <h2 class="text-2xl font-bold text-white mb-4">?? Ğãã ÇáãæÑÏíä</h2>
+      <h2 class="text-2xl font-bold text-white mb-4">ğŸ­ Ø°Ù…Ù… Ø§Ù„Ù…ÙˆØ±Ø¯ÙŠÙ†</h2>
       <div class="overflow-x-auto">
        <table class="w-full">
         <thead class="glass-table-header">
          <tr>
-          <th class="px-4 py-3 text-right text-white">ÇáãæÑÏ</th>
-          <th class="px-4 py-3 text-right text-white">ÇáãÏíæäíÉ</th>
-          <th class="px-4 py-3 text-right text-white">ÅÌÑÇÁÇÊ</th>
+          <th class="px-4 py-3 text-right text-white">Ø§Ù„Ù…ÙˆØ±Ø¯</th>
+          <th class="px-4 py-3 text-right text-white">Ø§Ù„Ù…Ø¯ÙŠÙˆÙ†ÙŠØ©</th>
+          <th class="px-4 py-3 text-right text-white">Ø¥Ø¬Ø±Ø§Ø¡Ø§Øª</th>
          </tr>
         </thead>
         <tbody id="supplier-payables-list">
          <tr class="glass-table-row">
-          <td colspan="3" class="px-4 py-8 text-center text-slate-400">áÇ ÊæÌÏ Ğãã</td>
+          <td colspan="3" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ØªÙˆØ¬Ø¯ Ø°Ù…Ù…</td>
          </tr>
         </tbody>
        </table>
@@ -464,41 +464,41 @@
      </div>
     </div><!-- Payment Form -->
     <div class="glass-card rounded-2xl p-6">
-     <h2 class="text-2xl font-bold text-white mb-4">?? ÊÓÌíá ÓÏÇÏ</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">ğŸ’° ØªØ³Ø¬ÙŠÙ„ Ø³Ø¯Ø§Ø¯</h2>
      <form id="payment-form" class="space-y-4">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-       <div><label class="block text-slate-300 mb-2">äæÚ ÇáÓÏÇÏ</label> <select id="payment-type" class="glass-input w-full px-4 py-3 rounded-xl" required onchange="updatePaymentOptions()"> <option value="">ÇÎÊÑ äæÚ ÇáÓÏÇÏ</option> <option value="customer">ÓÏÇÏ ãä Úãíá</option> <option value="supplier">ÓÏÇÏ áãæÑÏ</option> </select>
+       <div><label class="block text-slate-300 mb-2">Ù†ÙˆØ¹ Ø§Ù„Ø³Ø¯Ø§Ø¯</label> <select id="payment-type" class="glass-input w-full px-4 py-3 rounded-xl" required onchange="updatePaymentOptions()"> <option value="">Ø§Ø®ØªØ± Ù†ÙˆØ¹ Ø§Ù„Ø³Ø¯Ø§Ø¯</option> <option value="customer">Ø³Ø¯Ø§Ø¯ Ù…Ù† Ø¹Ù…ÙŠÙ„</option> <option value="supplier">Ø³Ø¯Ø§Ø¯ Ù„Ù…ÙˆØ±Ø¯</option> </select>
        </div>
-       <div><label class="block text-slate-300 mb-2" id="payment-entity-label">ÇáÌåÉ</label> <select id="payment-entity" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="">ÇÎÊÑ ÇáÌåÉ</option> </select>
+       <div><label class="block text-slate-300 mb-2" id="payment-entity-label">Ø§Ù„Ø¬Ù‡Ø©</label> <select id="payment-entity" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="">Ø§Ø®ØªØ± Ø§Ù„Ø¬Ù‡Ø©</option> </select>
        </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-       <div><label class="block text-slate-300 mb-2">ÇáãÈáÛ</label> <input type="number" id="payment-amount" class="glass-input w-full px-4 py-3 rounded-xl" step="0.01" min="0" required>
+       <div><label class="block text-slate-300 mb-2">Ø§Ù„Ù…Ø¨Ù„Øº</label> <input type="number" id="payment-amount" class="glass-input w-full px-4 py-3 rounded-xl" step="0.01" min="0" required>
        </div>
-       <div><label class="block text-slate-300 mb-2">ØÑíŞÉ ÇáÏİÚ</label> <select id="payment-method" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="äŞÏí">äŞÏí</option> <option value="Èäß">Èäß</option> <option value="İæÏÇİæä ßÇÔ">İæÏÇİæä ßÇÔ</option> <option value="ÇäÓÊÇ ÈÇí">ÇäÓÊÇ ÈÇí</option> </select>
+       <div><label class="block text-slate-300 mb-2">Ø·Ø±ÙŠÙ‚Ø© Ø§Ù„Ø¯ÙØ¹</label> <select id="payment-method" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="Ù†Ù‚Ø¯ÙŠ">Ù†Ù‚Ø¯ÙŠ</option> <option value="Ø¨Ù†Ùƒ">Ø¨Ù†Ùƒ</option> <option value="ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´">ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´</option> <option value="Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ">Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ</option> </select>
        </div>
       </div>
-      <div><label class="block text-slate-300 mb-2">ãáÇÍÙÇÊ</label> <textarea id="payment-notes" class="glass-input w-full px-4 py-3 rounded-xl" rows="2"></textarea>
-      </div><button type="submit" class="glass-button-primary w-full py-3 rounded-xl font-bold">?? ÊÓÌíá ÇáÓÏÇÏ</button>
+      <div><label class="block text-slate-300 mb-2">Ù…Ù„Ø§Ø­Ø¸Ø§Øª</label> <textarea id="payment-notes" class="glass-input w-full px-4 py-3 rounded-xl" rows="2"></textarea>
+      </div><button type="submit" class="glass-button-primary w-full py-3 rounded-xl font-bold">ğŸ’¾ ØªØ³Ø¬ÙŠÙ„ Ø§Ù„Ø³Ø¯Ø§Ø¯</button>
      </form>
     </div><!-- Payment History -->
     <div class="glass-card rounded-2xl p-6 mt-6">
-     <h2 class="text-2xl font-bold text-white mb-4">?? ÓÌá ÇáÓÏÇÏÇÊ</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">ğŸ“‹ Ø³Ø¬Ù„ Ø§Ù„Ø³Ø¯Ø§Ø¯Ø§Øª</h2>
      <div class="overflow-x-auto">
       <table class="w-full">
        <thead class="glass-table-header">
         <tr>
-         <th class="px-4 py-3 text-right text-white">ÇáÊÇÑíÎ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáäæÚ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáÌåÉ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáãÈáÛ</th>
-         <th class="px-4 py-3 text-right text-white">ØÑíŞÉ ÇáÏİÚ</th>
-         <th class="px-4 py-3 text-right text-white">ÅÌÑÇÁÇÊ</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„ØªØ§Ø±ÙŠØ®</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ù†ÙˆØ¹</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ø¬Ù‡Ø©</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ù…Ø¨Ù„Øº</th>
+         <th class="px-4 py-3 text-right text-white">Ø·Ø±ÙŠÙ‚Ø© Ø§Ù„Ø¯ÙØ¹</th>
+         <th class="px-4 py-3 text-right text-white">Ø¥Ø¬Ø±Ø§Ø¡Ø§Øª</th>
         </tr>
        </thead>
        <tbody id="payments-list">
         <tr class="glass-table-row">
-         <td colspan="6" class="px-4 py-8 text-center text-slate-400">áÇ ÊæÌÏ ÓÏÇÏÇÊ ÈÚÏ</td>
+         <td colspan="6" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ØªÙˆØ¬Ø¯ Ø³Ø¯Ø§Ø¯Ø§Øª Ø¨Ø¹Ø¯</td>
         </tr>
        </tbody>
       </table>
@@ -507,49 +507,49 @@
    </div><!-- Customers -->
    <div id="content-customers" class="tab-content hidden">
     <div class="glass-card rounded-2xl p-6 mb-6">
-     <h2 class="text-2xl font-bold text-white mb-4">? ÅÖÇİÉ Úãíá</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">â• Ø¥Ø¶Ø§ÙØ© Ø¹Ù…ÙŠÙ„</h2>
      <form id="customer-form" class="space-y-4">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-       <div><label class="block text-slate-300 mb-2">ÇÓã ÇáÚãíá</label> <input type="text" id="customer-name" class="glass-input w-full px-4 py-3 rounded-xl" required>
+       <div><label class="block text-slate-300 mb-2">Ø§Ø³Ù… Ø§Ù„Ø¹Ù…ÙŠÙ„</label> <input type="text" id="customer-name" class="glass-input w-full px-4 py-3 rounded-xl" required>
        </div>
-       <div><label class="block text-slate-300 mb-2">äæÚ ÇáÚãíá</label> <select id="customer-type" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="">ÇÎÊÑ äæÚ ÇáÚãíá</option> </select>
+       <div><label class="block text-slate-300 mb-2">Ù†ÙˆØ¹ Ø§Ù„Ø¹Ù…ÙŠÙ„</label> <select id="customer-type" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="">Ø§Ø®ØªØ± Ù†ÙˆØ¹ Ø§Ù„Ø¹Ù…ÙŠÙ„</option> </select>
        </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-       <div><label class="block text-slate-300 mb-2">ÑŞã ÇáåÇÊİ</label> <input type="tel" id="customer-phone" class="glass-input w-full px-4 py-3 rounded-xl" required>
+       <div><label class="block text-slate-300 mb-2">Ø±Ù‚Ù… Ø§Ù„Ù‡Ø§ØªÙ</label> <input type="tel" id="customer-phone" class="glass-input w-full px-4 py-3 rounded-xl" required>
        </div>
-       <div><label class="block text-slate-300 mb-2">åÇÊİ ÅÖÇİí 1</label> <input type="tel" id="customer-phone2" class="glass-input w-full px-4 py-3 rounded-xl">
+       <div><label class="block text-slate-300 mb-2">Ù‡Ø§ØªÙ Ø¥Ø¶Ø§ÙÙŠ 1</label> <input type="tel" id="customer-phone2" class="glass-input w-full px-4 py-3 rounded-xl">
        </div>
-       <div><label class="block text-slate-300 mb-2">åÇÊİ ÅÖÇİí 2</label> <input type="tel" id="customer-phone3" class="glass-input w-full px-4 py-3 rounded-xl">
+       <div><label class="block text-slate-300 mb-2">Ù‡Ø§ØªÙ Ø¥Ø¶Ø§ÙÙŠ 2</label> <input type="tel" id="customer-phone3" class="glass-input w-full px-4 py-3 rounded-xl">
        </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-       <div><label class="block text-slate-300 mb-2">ÇáãÍÕæá 1</label> <select id="customer-crop1" class="glass-input w-full px-4 py-3 rounded-xl"> <option value="">ÇÎÊÑ ãÍÕæá</option> </select>
+       <div><label class="block text-slate-300 mb-2">Ø§Ù„Ù…Ø­ØµÙˆÙ„ 1</label> <select id="customer-crop1" class="glass-input w-full px-4 py-3 rounded-xl"> <option value="">Ø§Ø®ØªØ± Ù…Ø­ØµÙˆÙ„</option> </select>
        </div>
-       <div><label class="block text-slate-300 mb-2">ÇáãÍÕæá 2</label> <select id="customer-crop2" class="glass-input w-full px-4 py-3 rounded-xl"> <option value="">ÇÎÊÑ ãÍÕæá</option> </select>
+       <div><label class="block text-slate-300 mb-2">Ø§Ù„Ù…Ø­ØµÙˆÙ„ 2</label> <select id="customer-crop2" class="glass-input w-full px-4 py-3 rounded-xl"> <option value="">Ø§Ø®ØªØ± Ù…Ø­ØµÙˆÙ„</option> </select>
        </div>
       </div>
-      <div><label class="block text-slate-300 mb-2">ÇáÚäæÇä</label> <input type="text" id="customer-address" class="glass-input w-full px-4 py-3 rounded-xl">
-      </div><button type="submit" class="glass-button-primary w-full py-3 rounded-xl font-bold">?? ÍİÙ ÇáÚãíá</button>
+      <div><label class="block text-slate-300 mb-2">Ø§Ù„Ø¹Ù†ÙˆØ§Ù†</label> <input type="text" id="customer-address" class="glass-input w-full px-4 py-3 rounded-xl">
+      </div><button type="submit" class="glass-button-primary w-full py-3 rounded-xl font-bold">ğŸ’¾ Ø­ÙØ¸ Ø§Ù„Ø¹Ù…ÙŠÙ„</button>
      </form>
     </div>
     <div class="glass-card rounded-2xl p-6">
-     <h2 class="text-2xl font-bold text-white mb-4">?? ŞÇÆãÉ ÇáÚãáÇÁ</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">ğŸ“‹ Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡</h2>
      <div class="overflow-x-auto">
       <table class="w-full">
        <thead class="glass-table-header">
         <tr>
-         <th class="px-4 py-3 text-right text-white">ÇáÇÓã</th>
-         <th class="px-4 py-3 text-right text-white">ÇáäæÚ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáåÇÊİ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáãÍÇÕíá</th>
-         <th class="px-4 py-3 text-right text-white">ÇáÚäæÇä</th>
-         <th class="px-4 py-3 text-right text-white">ÅÌÑÇÁÇÊ</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ø§Ø³Ù…</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ù†ÙˆØ¹</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ù‡Ø§ØªÙ</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ù…Ø­Ø§ØµÙŠÙ„</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ø¹Ù†ÙˆØ§Ù†</th>
+         <th class="px-4 py-3 text-right text-white">Ø¥Ø¬Ø±Ø§Ø¡Ø§Øª</th>
         </tr>
        </thead>
        <tbody id="customers-list">
         <tr class="glass-table-row">
-         <td colspan="6" class="px-4 py-8 text-center text-slate-400">áÇ íæÌÏ ÚãáÇÁ ÈÚÏ</td>
+         <td colspan="6" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø¹Ù…Ù„Ø§Ø¡ Ø¨Ø¹Ø¯</td>
         </tr>
        </tbody>
       </table>
@@ -558,34 +558,34 @@
    </div><!-- Suppliers -->
    <div id="content-suppliers" class="tab-content hidden">
     <div class="glass-card rounded-2xl p-6 mb-6">
-     <h2 class="text-2xl font-bold text-white mb-4">? ÅÖÇİÉ ãæÑÏ</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">â• Ø¥Ø¶Ø§ÙØ© Ù…ÙˆØ±Ø¯</h2>
      <form id="supplier-form" class="space-y-4">
-      <div><label class="block text-slate-300 mb-2">ÇáÇÓã</label> <input type="text" id="supplier-name" class="glass-input w-full px-4 py-3 rounded-xl" required>
+      <div><label class="block text-slate-300 mb-2">Ø§Ù„Ø§Ø³Ù…</label> <input type="text" id="supplier-name" class="glass-input w-full px-4 py-3 rounded-xl" required>
       </div>
-      <div><label class="block text-slate-300 mb-2">ÇáåÇÊİ</label> <input type="tel" id="supplier-phone" class="glass-input w-full px-4 py-3 rounded-xl" required>
+      <div><label class="block text-slate-300 mb-2">Ø§Ù„Ù‡Ø§ØªÙ</label> <input type="tel" id="supplier-phone" class="glass-input w-full px-4 py-3 rounded-xl" required>
       </div>
-      <div><label class="block text-slate-300 mb-2">ÇáÈÑíÏ ÇáÅáßÊÑæäí</label> <input type="email" id="supplier-email" class="glass-input w-full px-4 py-3 rounded-xl">
+      <div><label class="block text-slate-300 mb-2">Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ</label> <input type="email" id="supplier-email" class="glass-input w-full px-4 py-3 rounded-xl">
       </div>
-      <div><label class="block text-slate-300 mb-2">ÇáÚäæÇä</label> <input type="text" id="supplier-address" class="glass-input w-full px-4 py-3 rounded-xl">
-      </div><button type="submit" class="glass-button-primary w-full py-3 rounded-xl font-bold">?? ÍİÙ ÇáãæÑÏ</button>
+      <div><label class="block text-slate-300 mb-2">Ø§Ù„Ø¹Ù†ÙˆØ§Ù†</label> <input type="text" id="supplier-address" class="glass-input w-full px-4 py-3 rounded-xl">
+      </div><button type="submit" class="glass-button-primary w-full py-3 rounded-xl font-bold">ğŸ’¾ Ø­ÙØ¸ Ø§Ù„Ù…ÙˆØ±Ø¯</button>
      </form>
     </div>
     <div class="glass-card rounded-2xl p-6">
-     <h2 class="text-2xl font-bold text-white mb-4">?? ŞÇÆãÉ ÇáãæÑÏíä</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">ğŸ“‹ Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ù…ÙˆØ±Ø¯ÙŠÙ†</h2>
      <div class="overflow-x-auto">
       <table class="w-full">
        <thead class="glass-table-header">
         <tr>
-         <th class="px-4 py-3 text-right text-white">ÇáÇÓã</th>
-         <th class="px-4 py-3 text-right text-white">ÇáåÇÊİ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáÈÑíÏ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáÚäæÇä</th>
-         <th class="px-4 py-3 text-right text-white">ÅÌÑÇÁÇÊ</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ø§Ø³Ù…</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ù‡Ø§ØªÙ</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ø¨Ø±ÙŠØ¯</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ø¹Ù†ÙˆØ§Ù†</th>
+         <th class="px-4 py-3 text-right text-white">Ø¥Ø¬Ø±Ø§Ø¡Ø§Øª</th>
         </tr>
        </thead>
        <tbody id="suppliers-list">
         <tr class="glass-table-row">
-         <td colspan="5" class="px-4 py-8 text-center text-slate-400">áÇ íæÌÏ ãæÑÏíä ÈÚÏ</td>
+         <td colspan="5" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ù…ÙˆØ±Ø¯ÙŠÙ† Ø¨Ø¹Ø¯</td>
         </tr>
        </tbody>
       </table>
@@ -594,54 +594,54 @@
    </div><!-- Products -->
    <div id="content-products" class="tab-content hidden">
     <div class="glass-card rounded-2xl p-6 mb-6">
-     <h2 class="text-2xl font-bold text-white mb-4">? ÅÖÇİÉ ãäÊÌ</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">â• Ø¥Ø¶Ø§ÙØ© Ù…Ù†ØªØ¬</h2>
      <form id="product-form" class="space-y-4">
-      <div><label class="block text-slate-300 mb-2">ÇÓã ÇáãäÊÌ</label> <input type="text" id="product-name" class="glass-input w-full px-4 py-3 rounded-xl" required>
+      <div><label class="block text-slate-300 mb-2">Ø§Ø³Ù… Ø§Ù„Ù…Ù†ØªØ¬</label> <input type="text" id="product-name" class="glass-input w-full px-4 py-3 rounded-xl" required>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-       <div><label class="block text-slate-300 mb-2">ÊßáİÉ ÇáæÍÏÉ</label> <input type="number" id="product-cost" class="glass-input w-full px-4 py-3 rounded-xl" step="0.01" min="0" required>
+       <div><label class="block text-slate-300 mb-2">ØªÙƒÙ„ÙØ© Ø§Ù„ÙˆØ­Ø¯Ø©</label> <input type="number" id="product-cost" class="glass-input w-full px-4 py-3 rounded-xl" step="0.01" min="0" required>
        </div>
-       <div><label class="block text-slate-300 mb-2">ÓÚÑ ÇáÈíÚ ãÓÊåáß</label> <input type="number" id="product-price" class="glass-input w-full px-4 py-3 rounded-xl" step="0.01" min="0" required>
-       </div>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-       <div><label class="block text-slate-300 mb-2">ÓÚÑ ÇáÈíÚ ÌãáÉ</label> <input type="number" id="product-wholesale" class="glass-input w-full px-4 py-3 rounded-xl" step="0.01" min="0" required>
-       </div>
-       <div><label class="block text-slate-300 mb-2">ÌãáÉ ÇáßÑÊæäÉ</label> <input type="number" id="product-carton-wholesale" class="glass-input w-full px-4 py-3 rounded-xl" step="0.01" min="0" required>
+       <div><label class="block text-slate-300 mb-2">Ø³Ø¹Ø± Ø§Ù„Ø¨ÙŠØ¹ Ù…Ø³ØªÙ‡Ù„Ùƒ</label> <input type="number" id="product-price" class="glass-input w-full px-4 py-3 rounded-xl" step="0.01" min="0" required>
        </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-       <div><label class="block text-slate-300 mb-2">ÚÏÏ ÇáÚÈæÇÊ İí ÇáßÑÊæäÉ</label> <input type="number" id="product-units-per-carton" class="glass-input w-full px-4 py-3 rounded-xl" min="1" required>
+       <div><label class="block text-slate-300 mb-2">Ø³Ø¹Ø± Ø§Ù„Ø¨ÙŠØ¹ Ø¬Ù…Ù„Ø©</label> <input type="number" id="product-wholesale" class="glass-input w-full px-4 py-3 rounded-xl" step="0.01" min="0" required>
        </div>
-       <div><label class="block text-slate-300 mb-2">ÇáæÍÏÉ</label> <select id="product-unit" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="">ÇÎÊÑ ÇáæÍÏÉ</option> </select>
+       <div><label class="block text-slate-300 mb-2">Ø¬Ù…Ù„Ø© Ø§Ù„ÙƒØ±ØªÙˆÙ†Ø©</label> <input type="number" id="product-carton-wholesale" class="glass-input w-full px-4 py-3 rounded-xl" step="0.01" min="0" required>
        </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-       <div><label class="block text-slate-300 mb-2">ÇáßãíÉ ÇáãÊæİÑÉ İí ÇáãÎÒæä</label> <input type="number" id="product-current-stock" class="glass-input w-full px-4 py-3 rounded-xl" min="0" step="0.01" value="0" required>
+       <div><label class="block text-slate-300 mb-2">Ø¹Ø¯Ø¯ Ø§Ù„Ø¹Ø¨ÙˆØ§Øª ÙÙŠ Ø§Ù„ÙƒØ±ØªÙˆÙ†Ø©</label> <input type="number" id="product-units-per-carton" class="glass-input w-full px-4 py-3 rounded-xl" min="1" required>
        </div>
-       <div><label class="block text-slate-300 mb-2">ÇáÍÏ ÇáÃÏäì ááãÎÒæä</label> <input type="number" id="product-min-stock" class="glass-input w-full px-4 py-3 rounded-xl" min="0" step="0.01" required>
+       <div><label class="block text-slate-300 mb-2">Ø§Ù„ÙˆØ­Ø¯Ø©</label> <select id="product-unit" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="">Ø§Ø®ØªØ± Ø§Ù„ÙˆØ­Ø¯Ø©</option> </select>
        </div>
-      </div><button type="submit" class="glass-button-primary w-full py-3 rounded-xl font-bold">?? ÍİÙ ÇáãäÊÌ</button>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+       <div><label class="block text-slate-300 mb-2">Ø§Ù„ÙƒÙ…ÙŠØ© Ø§Ù„Ù…ØªÙˆÙØ±Ø© ÙÙŠ Ø§Ù„Ù…Ø®Ø²ÙˆÙ†</label> <input type="number" id="product-current-stock" class="glass-input w-full px-4 py-3 rounded-xl" min="0" step="0.01" value="0" required>
+       </div>
+       <div><label class="block text-slate-300 mb-2">Ø§Ù„Ø­Ø¯ Ø§Ù„Ø£Ø¯Ù†Ù‰ Ù„Ù„Ù…Ø®Ø²ÙˆÙ†</label> <input type="number" id="product-min-stock" class="glass-input w-full px-4 py-3 rounded-xl" min="0" step="0.01" required>
+       </div>
+      </div><button type="submit" class="glass-button-primary w-full py-3 rounded-xl font-bold">ğŸ’¾ Ø­ÙØ¸ Ø§Ù„Ù…Ù†ØªØ¬</button>
      </form>
     </div>
     <div class="glass-card rounded-2xl p-6">
-     <h2 class="text-2xl font-bold text-white mb-4">?? ŞÇÆãÉ ÇáãäÊÌÇÊ</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">ğŸ“‹ Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª</h2>
      <div class="overflow-x-auto">
       <table class="w-full">
        <thead class="glass-table-header">
         <tr>
-         <th class="px-4 py-3 text-right text-white">ÇáãäÊÌ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáÊßáİÉ</th>
-         <th class="px-4 py-3 text-right text-white">ãÓÊåáß</th>
-         <th class="px-4 py-3 text-right text-white">ÌãáÉ</th>
-         <th class="px-4 py-3 text-right text-white">ßÑÊæäÉ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáãÎÒæä</th>
-         <th class="px-4 py-3 text-right text-white">ÅÌÑÇÁÇÊ</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ù…Ù†ØªØ¬</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„ØªÙƒÙ„ÙØ©</th>
+         <th class="px-4 py-3 text-right text-white">Ù…Ø³ØªÙ‡Ù„Ùƒ</th>
+         <th class="px-4 py-3 text-right text-white">Ø¬Ù…Ù„Ø©</th>
+         <th class="px-4 py-3 text-right text-white">ÙƒØ±ØªÙˆÙ†Ø©</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ù…Ø®Ø²ÙˆÙ†</th>
+         <th class="px-4 py-3 text-right text-white">Ø¥Ø¬Ø±Ø§Ø¡Ø§Øª</th>
         </tr>
        </thead>
        <tbody id="products-list">
         <tr class="glass-table-row">
-         <td colspan="7" class="px-4 py-8 text-center text-slate-400">áÇ ÊæÌÏ ãäÊÌÇÊ ÈÚÏ</td>
+         <td colspan="7" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ù†ØªØ¬Ø§Øª Ø¨Ø¹Ø¯</td>
         </tr>
        </tbody>
       </table>
@@ -650,25 +650,25 @@
    </div><!-- Inventory -->
    <div id="content-inventory" class="tab-content hidden">
     <div class="glass-card rounded-2xl p-6 mb-6">
-     <h2 class="text-2xl font-bold text-white mb-4">?? ÊäÈíåÇÊ ÇáãÎÒæä</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">âš ï¸ ØªÙ†Ø¨ÙŠÙ‡Ø§Øª Ø§Ù„Ù…Ø®Ø²ÙˆÙ†</h2>
      <div id="inventory-alerts"></div>
     </div>
     <div class="glass-card rounded-2xl p-6">
-     <h2 class="text-2xl font-bold text-white mb-4">?? ÍÑßÉ ÇáãÎÒæä</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">ğŸ“Š Ø­Ø±ÙƒØ© Ø§Ù„Ù…Ø®Ø²ÙˆÙ†</h2>
      <div class="overflow-x-auto">
       <table class="w-full">
        <thead class="glass-table-header">
         <tr>
-         <th class="px-4 py-3 text-right text-white">ÇáÊÇÑíÎ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáãäÊÌ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáäæÚ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáßãíÉ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáÑÕíÏ</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„ØªØ§Ø±ÙŠØ®</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ù…Ù†ØªØ¬</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ù†ÙˆØ¹</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„ÙƒÙ…ÙŠØ©</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ø±ØµÙŠØ¯</th>
         </tr>
        </thead>
        <tbody id="inventory-movements">
         <tr class="glass-table-row">
-         <td colspan="5" class="px-4 py-8 text-center text-slate-400">áÇ ÊæÌÏ ÍÑßÇÊ ÈÚÏ</td>
+         <td colspan="5" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ØªÙˆØ¬Ø¯ Ø­Ø±ÙƒØ§Øª Ø¨Ø¹Ø¯</td>
         </tr>
        </tbody>
       </table>
@@ -679,105 +679,105 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
      <div class="glass-stat-card rounded-2xl p-6">
       <div class="text-green-400 text-2xl mb-2">
-       ??
+       ğŸ’µ
       </div>
       <div class="text-slate-300 text-sm mb-1">
-       ÇáÕäÏæŞ
+       Ø§Ù„ØµÙ†Ø¯ÙˆÙ‚
       </div>
       <div class="text-2xl font-bold text-white" id="cash-balance">
-       0 Ì.ã
+       0 Ø¬.Ù…
       </div>
      </div>
      <div class="glass-stat-card rounded-2xl p-6">
       <div class="text-green-400 text-2xl mb-2">
-       ??
+       ğŸ¦
       </div>
       <div class="text-slate-300 text-sm mb-1">
-       ÇáÈäß
+       Ø§Ù„Ø¨Ù†Ùƒ
       </div>
       <div class="text-2xl font-bold text-white" id="bank-balance">
-       0 Ì.ã
+       0 Ø¬.Ù…
       </div>
      </div>
      <div class="glass-stat-card rounded-2xl p-6">
       <div class="text-green-400 text-2xl mb-2">
-       ??
+       ğŸ“±
       </div>
       <div class="text-slate-300 text-sm mb-1">
-       İæÏÇİæä ßÇÔ
+       ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´
       </div>
       <div class="text-2xl font-bold text-white" id="vodafone-balance">
-       0 Ì.ã
+       0 Ø¬.Ù…
       </div>
      </div>
      <div class="glass-stat-card rounded-2xl p-6">
       <div class="text-green-400 text-2xl mb-2">
-       ??
+       ğŸ’³
       </div>
       <div class="text-slate-300 text-sm mb-1">
-       ÇäÓÊÇ ÈÇí
+       Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ
       </div>
       <div class="text-2xl font-bold text-white" id="instapay-balance">
-       0 Ì.ã
+       0 Ø¬.Ù…
       </div>
      </div>
      <div class="glass-stat-card rounded-2xl p-6">
       <div class="text-red-400 text-2xl mb-2">
-       ??
+       ğŸ‘¥
       </div>
       <div class="text-slate-300 text-sm mb-1">
-       Ğãã ÇáÚãáÇÁ
+       Ø°Ù…Ù… Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡
       </div>
       <div class="text-2xl font-bold text-white" id="customers-debt-balance">
-       0 Ì.ã
+       0 Ø¬.Ù…
       </div>
      </div>
      <div class="glass-stat-card rounded-2xl p-6">
       <div class="text-red-400 text-2xl mb-2">
-       ??
+       ğŸ­
       </div>
       <div class="text-slate-300 text-sm mb-1">
-       Ğãã ÇáãæÑÏíä
+       Ø°Ù…Ù… Ø§Ù„Ù…ÙˆØ±Ø¯ÙŠÙ†
       </div>
       <div class="text-2xl font-bold text-white" id="suppliers-debt-balance">
-       0 Ì.ã
+       0 Ø¬.Ù…
       </div>
      </div>
     </div>
     <div class="glass-card rounded-2xl p-6">
-     <h2 class="text-2xl font-bold text-white mb-4">?? Ïáíá ÇáÍÓÇÈÇÊ</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">ğŸ“‹ Ø¯Ù„ÙŠÙ„ Ø§Ù„Ø­Ø³Ø§Ø¨Ø§Øª</h2>
      <div class="overflow-x-auto">
       <table class="w-full">
        <thead class="glass-table-header">
         <tr>
-         <th class="px-4 py-3 text-right text-white">ÇáÍÓÇÈ</th>
-         <th class="px-4 py-3 text-right text-white">ÇáÑÕíÏ</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ø­Ø³Ø§Ø¨</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ø±ØµÙŠØ¯</th>
         </tr>
        </thead>
        <tbody>
         <tr class="glass-table-row">
-         <td class="px-4 py-3 text-white">ÇáÕäÏæŞ</td>
-         <td class="px-4 py-3 text-white" id="cash-row">0 Ì.ã</td>
+         <td class="px-4 py-3 text-white">Ø§Ù„ØµÙ†Ø¯ÙˆÙ‚</td>
+         <td class="px-4 py-3 text-white" id="cash-row">0 Ø¬.Ù…</td>
         </tr>
         <tr class="glass-table-row">
-         <td class="px-4 py-3 text-white">ÇáÈäß</td>
-         <td class="px-4 py-3 text-white" id="bank-row">0 Ì.ã</td>
+         <td class="px-4 py-3 text-white">Ø§Ù„Ø¨Ù†Ùƒ</td>
+         <td class="px-4 py-3 text-white" id="bank-row">0 Ø¬.Ù…</td>
         </tr>
         <tr class="glass-table-row">
-         <td class="px-4 py-3 text-white">İæÏÇİæä ßÇÔ</td>
-         <td class="px-4 py-3 text-white" id="vodafone-row">0 Ì.ã</td>
+         <td class="px-4 py-3 text-white">ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´</td>
+         <td class="px-4 py-3 text-white" id="vodafone-row">0 Ø¬.Ù…</td>
         </tr>
         <tr class="glass-table-row">
-         <td class="px-4 py-3 text-white">ÇäÓÊÇ ÈÇí</td>
-         <td class="px-4 py-3 text-white" id="instapay-row">0 Ì.ã</td>
+         <td class="px-4 py-3 text-white">Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ</td>
+         <td class="px-4 py-3 text-white" id="instapay-row">0 Ø¬.Ù…</td>
         </tr>
         <tr class="glass-table-row">
-         <td class="px-4 py-3 text-white">Ğãã ÇáÚãáÇÁ</td>
-         <td class="px-4 py-3 text-white" id="customers-debt-row">0 Ì.ã</td>
+         <td class="px-4 py-3 text-white">Ø°Ù…Ù… Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡</td>
+         <td class="px-4 py-3 text-white" id="customers-debt-row">0 Ø¬.Ù…</td>
         </tr>
         <tr class="glass-table-row">
-         <td class="px-4 py-3 text-white">Ğãã ÇáãæÑÏíä</td>
-         <td class="px-4 py-3 text-white" id="suppliers-debt-row">0 Ì.ã</td>
+         <td class="px-4 py-3 text-white">Ø°Ù…Ù… Ø§Ù„Ù…ÙˆØ±Ø¯ÙŠÙ†</td>
+         <td class="px-4 py-3 text-white" id="suppliers-debt-row">0 Ø¬.Ù…</td>
         </tr>
        </tbody>
       </table>
@@ -786,36 +786,36 @@
    </div><!-- Reports -->
    <div id="content-reports" class="tab-content hidden">
     <div class="glass-card rounded-2xl p-6 mb-6">
-     <h2 class="text-2xl font-bold text-white mb-4">?? ŞÇÆãÉ ÇáÏÎá</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">ğŸ“Š Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ø¯Ø®Ù„</h2>
      <div class="space-y-4">
-      <div class="flex justify-between items-center"><span class="text-slate-300">ÅÌãÇáí ÇáãÈíÚÇÊ</span> <span class="text-white font-bold" id="income-sales">0 Ì.ã</span>
+      <div class="flex justify-between items-center"><span class="text-slate-300">Ø¥Ø¬Ù…Ø§Ù„ÙŠ Ø§Ù„Ù…Ø¨ÙŠØ¹Ø§Øª</span> <span class="text-white font-bold" id="income-sales">0 Ø¬.Ù…</span>
       </div>
-      <div class="flex justify-between items-center"><span class="text-slate-300">ÊßáİÉ ÇáÈÖÇÚÉ ÇáãÈÇÚÉ (COGS)</span> <span class="text-red-400 font-bold" id="income-cogs">0 Ì.ã</span>
-      </div>
-      <hr class="border-slate-600">
-      <div class="flex justify-between items-center"><span class="text-white font-bold">ãÌãá ÇáÑÈÍ</span> <span class="text-green-400 font-bold text-xl" id="income-gross">0 Ì.ã</span>
-      </div>
-      <div class="flex justify-between items-center"><span class="text-slate-300">ÇáãÕÑæİÇÊ</span> <span class="text-red-400 font-bold" id="income-expenses">0 Ì.ã</span>
+      <div class="flex justify-between items-center"><span class="text-slate-300">ØªÙƒÙ„ÙØ© Ø§Ù„Ø¨Ø¶Ø§Ø¹Ø© Ø§Ù„Ù…Ø¨Ø§Ø¹Ø© (COGS)</span> <span class="text-red-400 font-bold" id="income-cogs">0 Ø¬.Ù…</span>
       </div>
       <hr class="border-slate-600">
-      <div class="flex justify-between items-center"><span class="text-white font-bold text-xl">ÕÇİí ÇáÑÈÍ</span> <span class="text-green-400 font-bold text-2xl" id="income-net">0 Ì.ã</span>
+      <div class="flex justify-between items-center"><span class="text-white font-bold">Ù…Ø¬Ù…Ù„ Ø§Ù„Ø±Ø¨Ø­</span> <span class="text-green-400 font-bold text-xl" id="income-gross">0 Ø¬.Ù…</span>
+      </div>
+      <div class="flex justify-between items-center"><span class="text-slate-300">Ø§Ù„Ù…ØµØ±ÙˆÙØ§Øª</span> <span class="text-red-400 font-bold" id="income-expenses">0 Ø¬.Ù…</span>
+      </div>
+      <hr class="border-slate-600">
+      <div class="flex justify-between items-center"><span class="text-white font-bold text-xl">ØµØ§ÙÙŠ Ø§Ù„Ø±Ø¨Ø­</span> <span class="text-green-400 font-bold text-2xl" id="income-net">0 Ø¬.Ù…</span>
       </div>
      </div>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
      <div class="glass-card rounded-2xl p-6">
-      <h2 class="text-xl font-bold text-white mb-4">?? äÓÈ ÇáÑÈÍíÉ</h2>
+      <h2 class="text-xl font-bold text-white mb-4">ğŸ“ˆ Ù†Ø³Ø¨ Ø§Ù„Ø±Ø¨Ø­ÙŠØ©</h2>
       <div class="space-y-3">
-       <div class="flex justify-between items-center"><span class="text-slate-300">åÇãÔ ÇáÑÈÍ ÇáÅÌãÇáí</span> <span class="text-green-400 font-bold" id="gross-margin">0%</span>
+       <div class="flex justify-between items-center"><span class="text-slate-300">Ù‡Ø§Ù…Ø´ Ø§Ù„Ø±Ø¨Ø­ Ø§Ù„Ø¥Ø¬Ù…Ø§Ù„ÙŠ</span> <span class="text-green-400 font-bold" id="gross-margin">0%</span>
        </div>
-       <div class="flex justify-between items-center"><span class="text-slate-300">åÇãÔ ÇáÑÈÍ ÇáÕÇİí</span> <span class="text-green-400 font-bold" id="net-margin">0%</span>
+       <div class="flex justify-between items-center"><span class="text-slate-300">Ù‡Ø§Ù…Ø´ Ø§Ù„Ø±Ø¨Ø­ Ø§Ù„ØµØ§ÙÙŠ</span> <span class="text-green-400 font-bold" id="net-margin">0%</span>
        </div>
       </div>
      </div>
      <div class="glass-card rounded-2xl p-6">
-      <h2 class="text-xl font-bold text-white mb-4">?? äŞØÉ ÇáÊÚÇÏá</h2>
+      <h2 class="text-xl font-bold text-white mb-4">âš–ï¸ Ù†Ù‚Ø·Ø© Ø§Ù„ØªØ¹Ø§Ø¯Ù„</h2>
       <div class="space-y-3">
-       <div class="flex justify-between items-center"><span class="text-slate-300">ãÈíÚÇÊ ÇáÊÚÇÏá</span> <span class="text-yellow-400 font-bold" id="break-even">0 Ì.ã</span>
+       <div class="flex justify-between items-center"><span class="text-slate-300">Ù…Ø¨ÙŠØ¹Ø§Øª Ø§Ù„ØªØ¹Ø§Ø¯Ù„</span> <span class="text-yellow-400 font-bold" id="break-even">0 Ø¬.Ù…</span>
        </div>
       </div>
      </div>
@@ -825,10 +825,10 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
      <div class="glass-stat-card rounded-2xl p-6">
       <div class="text-green-400 text-3xl mb-2">
-       ??
+       ğŸ‘¥
       </div>
       <div class="text-slate-300 text-sm mb-1">
-       ÅÌãÇáí ÇáÚãáÇÁ
+       Ø¥Ø¬Ù…Ø§Ù„ÙŠ Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡
       </div>
       <div class="text-3xl font-bold text-white" id="crm-total-customers">
        0
@@ -836,10 +836,10 @@
      </div>
      <div class="glass-stat-card rounded-2xl p-6">
       <div class="text-green-400 text-3xl mb-2">
-       ?
+       âœ…
       </div>
       <div class="text-slate-300 text-sm mb-1">
-       ÚãáÇÁ äÔØíä
+       Ø¹Ù…Ù„Ø§Ø¡ Ù†Ø´Ø·ÙŠÙ†
       </div>
       <div class="text-3xl font-bold text-white" id="crm-active-customers">
        0
@@ -847,10 +847,10 @@
      </div>
      <div class="glass-stat-card rounded-2xl p-6">
       <div class="text-yellow-400 text-3xl mb-2">
-       ??
+       ğŸ¯
       </div>
       <div class="text-slate-300 text-sm mb-1">
-       ÚãáÇÁ ãÍÊãáíä
+       Ø¹Ù…Ù„Ø§Ø¡ Ù…Ø­ØªÙ…Ù„ÙŠÙ†
       </div>
       <div class="text-3xl font-bold text-white" id="crm-potential-customers">
        0
@@ -858,57 +858,57 @@
      </div>
     </div><!-- Add Potential Customer -->
     <div class="glass-card rounded-2xl p-6 mb-6">
-     <h2 class="text-2xl font-bold text-white mb-4">? ÅÖÇİÉ Úãíá ãÍÊãá</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">â• Ø¥Ø¶Ø§ÙØ© Ø¹Ù…ÙŠÙ„ Ù…Ø­ØªÙ…Ù„</h2>
      <form id="potential-customer-form" class="space-y-4">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-       <div><label class="block text-slate-300 mb-2">ÇÓã ÇáÚãíá</label> <input type="text" id="potential-customer-name" class="glass-input w-full px-4 py-3 rounded-xl" required>
+       <div><label class="block text-slate-300 mb-2">Ø§Ø³Ù… Ø§Ù„Ø¹Ù…ÙŠÙ„</label> <input type="text" id="potential-customer-name" class="glass-input w-full px-4 py-3 rounded-xl" required>
        </div>
-       <div><label class="block text-slate-300 mb-2">äæÚ ÇáÚãíá</label> <select id="potential-customer-type" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="">ÇÎÊÑ äæÚ ÇáÚãíá</option> </select>
+       <div><label class="block text-slate-300 mb-2">Ù†ÙˆØ¹ Ø§Ù„Ø¹Ù…ÙŠÙ„</label> <select id="potential-customer-type" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="">Ø§Ø®ØªØ± Ù†ÙˆØ¹ Ø§Ù„Ø¹Ù…ÙŠÙ„</option> </select>
        </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-       <div><label class="block text-slate-300 mb-2">ÑŞã ÇáåÇÊİ</label> <input type="tel" id="potential-customer-phone" class="glass-input w-full px-4 py-3 rounded-xl" required>
+       <div><label class="block text-slate-300 mb-2">Ø±Ù‚Ù… Ø§Ù„Ù‡Ø§ØªÙ</label> <input type="tel" id="potential-customer-phone" class="glass-input w-full px-4 py-3 rounded-xl" required>
        </div>
-       <div><label class="block text-slate-300 mb-2">ÇáãÍÕæá ÇáãåÊã Èå</label> <select id="potential-customer-crop" class="glass-input w-full px-4 py-3 rounded-xl"> <option value="">ÇÎÊÑ ãÍÕæá</option> </select>
+       <div><label class="block text-slate-300 mb-2">Ø§Ù„Ù…Ø­ØµÙˆÙ„ Ø§Ù„Ù…Ù‡ØªÙ… Ø¨Ù‡</label> <select id="potential-customer-crop" class="glass-input w-full px-4 py-3 rounded-xl"> <option value="">Ø§Ø®ØªØ± Ù…Ø­ØµÙˆÙ„</option> </select>
        </div>
       </div>
-      <div><label class="block text-slate-300 mb-2">ãáÇÍÙÇÊ</label> <textarea id="potential-customer-notes" class="glass-input w-full px-4 py-3 rounded-xl" rows="2"></textarea>
-      </div><button type="submit" class="glass-button-primary w-full py-3 rounded-xl font-bold">?? ÍİÙ ÇáÚãíá ÇáãÍÊãá</button>
+      <div><label class="block text-slate-300 mb-2">Ù…Ù„Ø§Ø­Ø¸Ø§Øª</label> <textarea id="potential-customer-notes" class="glass-input w-full px-4 py-3 rounded-xl" rows="2"></textarea>
+      </div><button type="submit" class="glass-button-primary w-full py-3 rounded-xl font-bold">ğŸ’¾ Ø­ÙØ¸ Ø§Ù„Ø¹Ù…ÙŠÙ„ Ø§Ù„Ù…Ø­ØªÙ…Ù„</button>
      </form>
     </div>
     <div class="glass-card rounded-2xl p-6 mb-6">
-     <h2 class="text-2xl font-bold text-white mb-4">? ÅÖÇİÉ ãÊÇÈÚÉ</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">â• Ø¥Ø¶Ø§ÙØ© Ù…ØªØ§Ø¨Ø¹Ø©</h2>
      <form id="follow-up-form" class="space-y-4">
-      <div><label class="block text-slate-300 mb-2">ÇáÚãíá</label> <select id="follow-up-customer" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="">ÇÎÊÑ Úãíá</option> </select>
+      <div><label class="block text-slate-300 mb-2">Ø§Ù„Ø¹Ù…ÙŠÙ„</label> <select id="follow-up-customer" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="">Ø§Ø®ØªØ± Ø¹Ù…ÙŠÙ„</option> </select>
       </div>
-      <div><label class="block text-slate-300 mb-2">äæÚ ÇáãÊÇÈÚÉ</label> <select id="follow-up-type" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="ãßÇáãÉ">ãßÇáãÉ</option> <option value="ÒíÇÑÉ">ÒíÇÑÉ</option> <option value="ÑÓÇáÉ">ÑÓÇáÉ</option> <option value="ÇÌÊãÇÚ">ÇÌÊãÇÚ</option> </select>
+      <div><label class="block text-slate-300 mb-2">Ù†ÙˆØ¹ Ø§Ù„Ù…ØªØ§Ø¨Ø¹Ø©</label> <select id="follow-up-type" class="glass-input w-full px-4 py-3 rounded-xl" required> <option value="Ù…ÙƒØ§Ù„Ù…Ø©">Ù…ÙƒØ§Ù„Ù…Ø©</option> <option value="Ø²ÙŠØ§Ø±Ø©">Ø²ÙŠØ§Ø±Ø©</option> <option value="Ø±Ø³Ø§Ù„Ø©">Ø±Ø³Ø§Ù„Ø©</option> <option value="Ø§Ø¬ØªÙ…Ø§Ø¹">Ø§Ø¬ØªÙ…Ø§Ø¹</option> </select>
       </div>
-      <div><label class="block text-slate-300 mb-2">ÇáãÍÕæá</label> <select id="follow-up-crop" class="glass-input w-full px-4 py-3 rounded-xl"> <option value="">ÇÎÊÑ ãÍÕæá</option> </select>
+      <div><label class="block text-slate-300 mb-2">Ø§Ù„Ù…Ø­ØµÙˆÙ„</label> <select id="follow-up-crop" class="glass-input w-full px-4 py-3 rounded-xl"> <option value="">Ø§Ø®ØªØ± Ù…Ø­ØµÙˆÙ„</option> </select>
       </div>
-      <div><label class="block text-slate-300 mb-2">ÇáãáÇÍÙÇÊ</label> <textarea id="follow-up-notes" class="glass-input w-full px-4 py-3 rounded-xl" rows="3" required></textarea>
-      </div><button type="submit" class="glass-button-primary w-full py-3 rounded-xl font-bold">?? ÍİÙ ÇáãÊÇÈÚÉ</button>
+      <div><label class="block text-slate-300 mb-2">Ø§Ù„Ù…Ù„Ø§Ø­Ø¸Ø§Øª</label> <textarea id="follow-up-notes" class="glass-input w-full px-4 py-3 rounded-xl" rows="3" required></textarea>
+      </div><button type="submit" class="glass-button-primary w-full py-3 rounded-xl font-bold">ğŸ’¾ Ø­ÙØ¸ Ø§Ù„Ù…ØªØ§Ø¨Ø¹Ø©</button>
      </form>
     </div>
     <div class="glass-card rounded-2xl p-6 mb-6">
-     <h2 class="text-2xl font-bold text-white mb-4">?? ÓÌá ÇáãÊÇÈÚÇÊ</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">ğŸ“ Ø³Ø¬Ù„ Ø§Ù„Ù…ØªØ§Ø¨Ø¹Ø§Øª</h2>
      <div id="crm-notes"></div>
     </div>
     <div class="glass-card rounded-2xl p-6">
-     <h2 class="text-2xl font-bold text-white mb-4">?? ÃİÖá ÇáÚãáÇÁ</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">ğŸ† Ø£ÙØ¶Ù„ Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡</h2>
      <div class="overflow-x-auto">
       <table class="w-full">
        <thead class="glass-table-header">
         <tr>
-         <th class="px-4 py-3 text-right text-white">ÇáÚãíá</th>
-         <th class="px-4 py-3 text-right text-white">ÚÏÏ ÇáãÔÊÑíÇÊ</th>
-         <th class="px-4 py-3 text-right text-white">ÅÌãÇáí ÇáãÔÊÑíÇÊ</th>
-         <th class="px-4 py-3 text-right text-white">ÂÎÑ ÊæÇÕá</th>
-         <th class="px-4 py-3 text-right text-white">ÇáÍÇáÉ</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ø¹Ù…ÙŠÙ„</th>
+         <th class="px-4 py-3 text-right text-white">Ø¹Ø¯Ø¯ Ø§Ù„Ù…Ø´ØªØ±ÙŠØ§Øª</th>
+         <th class="px-4 py-3 text-right text-white">Ø¥Ø¬Ù…Ø§Ù„ÙŠ Ø§Ù„Ù…Ø´ØªØ±ÙŠØ§Øª</th>
+         <th class="px-4 py-3 text-right text-white">Ø¢Ø®Ø± ØªÙˆØ§ØµÙ„</th>
+         <th class="px-4 py-3 text-right text-white">Ø§Ù„Ø­Ø§Ù„Ø©</th>
         </tr>
        </thead>
        <tbody id="crm-top-customers">
         <tr class="glass-table-row">
-         <td colspan="5" class="px-4 py-8 text-center text-slate-400">áÇ ÊæÌÏ ÈíÇäÇÊ ÈÚÏ</td>
+         <td colspan="5" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ØªÙˆØ¬Ø¯ Ø¨ÙŠØ§Ù†Ø§Øª Ø¨Ø¹Ø¯</td>
         </tr>
        </tbody>
       </table>
@@ -917,67 +917,67 @@
    </div><!-- Settings -->
    <div id="content-settings" class="tab-content hidden">
     <div class="glass-card rounded-2xl p-6 mb-6">
-     <h2 class="text-2xl font-bold text-white mb-4">?? ÅÚÏÇÏÇÊ ÇáäÙÇã</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">âš™ï¸ Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„Ù†Ø¸Ø§Ù…</h2>
      <form id="settings-form" class="space-y-4">
-      <div><label class="block text-slate-300 mb-2">ÇÓã ÇáÈÑäÇãÌ</label> <input type="text" id="setting-app-name" class="glass-input w-full px-4 py-3 rounded-xl" value="ãÓÇÚÏ ÍÓÇÈÇÊ">
+      <div><label class="block text-slate-300 mb-2">Ø§Ø³Ù… Ø§Ù„Ø¨Ø±Ù†Ø§Ù…Ø¬</label> <input type="text" id="setting-app-name" class="glass-input w-full px-4 py-3 rounded-xl" value="Ù…Ø³Ø§Ø¹Ø¯ Ø­Ø³Ø§Ø¨Ø§Øª">
       </div>
-      <div><label class="block text-slate-300 mb-2">ÇÓã ÇáÔÑßÉ</label> <input type="text" id="setting-company-name" class="glass-input w-full px-4 py-3 rounded-xl">
+      <div><label class="block text-slate-300 mb-2">Ø§Ø³Ù… Ø§Ù„Ø´Ø±ÙƒØ©</label> <input type="text" id="setting-company-name" class="glass-input w-full px-4 py-3 rounded-xl">
       </div>
-      <div><label class="block text-slate-300 mb-2">ÚäæÇä ÇáÔÑßÉ</label> <input type="text" id="setting-company-address" class="glass-input w-full px-4 py-3 rounded-xl">
+      <div><label class="block text-slate-300 mb-2">Ø¹Ù†ÙˆØ§Ù† Ø§Ù„Ø´Ø±ÙƒØ©</label> <input type="text" id="setting-company-address" class="glass-input w-full px-4 py-3 rounded-xl">
       </div>
-      <div><label class="block text-slate-300 mb-2">åÇÊİ ÇáÔÑßÉ</label> <input type="tel" id="setting-company-phone" class="glass-input w-full px-4 py-3 rounded-xl">
+      <div><label class="block text-slate-300 mb-2">Ù‡Ø§ØªÙ Ø§Ù„Ø´Ø±ÙƒØ©</label> <input type="tel" id="setting-company-phone" class="glass-input w-full px-4 py-3 rounded-xl">
       </div>
-      <div><label class="block text-slate-300 mb-2">ÇáÚãáÉ</label> <select id="setting-currency" class="glass-input w-full px-4 py-3 rounded-xl"> <option value="Ì.ã">Ìäíå ãÕÑí (Ì.ã)</option> <option value="Ñ.Ó">ÑíÇá ÓÚæÏí (Ñ.Ó)</option> <option value="Ï.Å">ÏÑåã ÅãÇÑÇÊí (Ï.Å)</option> <option value="$">ÏæáÇÑ ($)</option> </select>
+      <div><label class="block text-slate-300 mb-2">Ø§Ù„Ø¹Ù…Ù„Ø©</label> <select id="setting-currency" class="glass-input w-full px-4 py-3 rounded-xl"> <option value="Ø¬.Ù…">Ø¬Ù†ÙŠÙ‡ Ù…ØµØ±ÙŠ (Ø¬.Ù…)</option> <option value="Ø±.Ø³">Ø±ÙŠØ§Ù„ Ø³Ø¹ÙˆØ¯ÙŠ (Ø±.Ø³)</option> <option value="Ø¯.Ø¥">Ø¯Ø±Ù‡Ù… Ø¥Ù…Ø§Ø±Ø§ØªÙŠ (Ø¯.Ø¥)</option> <option value="$">Ø¯ÙˆÙ„Ø§Ø± ($)</option> </select>
       </div>
-      <div><label class="block text-slate-300 mb-2">äÓÈÉ ÇáÖÑíÈÉ (%)</label> <input type="number" id="setting-tax-rate" class="glass-input w-full px-4 py-3 rounded-xl" step="0.01" min="0">
-      </div><button type="submit" class="glass-button-primary w-full py-3 rounded-xl font-bold">?? ÍİÙ ÇáÅÚÏÇÏÇÊ</button>
+      <div><label class="block text-slate-300 mb-2">Ù†Ø³Ø¨Ø© Ø§Ù„Ø¶Ø±ÙŠØ¨Ø© (%)</label> <input type="number" id="setting-tax-rate" class="glass-input w-full px-4 py-3 rounded-xl" step="0.01" min="0">
+      </div><button type="submit" class="glass-button-primary w-full py-3 rounded-xl font-bold">ğŸ’¾ Ø­ÙØ¸ Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª</button>
      </form>
     </div><!-- Manage Lists -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6"><!-- Customer Types -->
      <div class="glass-card rounded-2xl p-6">
-      <h3 class="text-xl font-bold text-white mb-4">ÃäæÇÚ ÇáÚãáÇÁ</h3>
+      <h3 class="text-xl font-bold text-white mb-4">Ø£Ù†ÙˆØ§Ø¹ Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡</h3>
       <form id="customer-type-form" class="mb-4">
-       <div class="flex gap-2"><input type="text" id="new-customer-type" class="glass-input flex-1 px-4 py-2 rounded-xl" placeholder="äæÚ ÌÏíÏ..."> <button type="submit" class="glass-button-primary px-4 py-2 rounded-xl">?</button>
+       <div class="flex gap-2"><input type="text" id="new-customer-type" class="glass-input flex-1 px-4 py-2 rounded-xl" placeholder="Ù†ÙˆØ¹ Ø¬Ø¯ÙŠØ¯..."> <button type="submit" class="glass-button-primary px-4 py-2 rounded-xl">â•</button>
        </div>
       </form>
       <div id="customer-types-list" class="space-y-2"></div>
      </div><!-- Crops -->
      <div class="glass-card rounded-2xl p-6">
-      <h3 class="text-xl font-bold text-white mb-4">ÇáãÍÇÕíá</h3>
+      <h3 class="text-xl font-bold text-white mb-4">Ø§Ù„Ù…Ø­Ø§ØµÙŠÙ„</h3>
       <form id="crop-form" class="mb-4">
-       <div class="flex gap-2"><input type="text" id="new-crop" class="glass-input flex-1 px-4 py-2 rounded-xl" placeholder="ãÍÕæá ÌÏíÏ..."> <button type="submit" class="glass-button-primary px-4 py-2 rounded-xl">?</button>
+       <div class="flex gap-2"><input type="text" id="new-crop" class="glass-input flex-1 px-4 py-2 rounded-xl" placeholder="Ù…Ø­ØµÙˆÙ„ Ø¬Ø¯ÙŠØ¯..."> <button type="submit" class="glass-button-primary px-4 py-2 rounded-xl">â•</button>
        </div>
       </form>
       <div id="crops-list" class="space-y-2"></div>
      </div><!-- Units -->
      <div class="glass-card rounded-2xl p-6">
-      <h3 class="text-xl font-bold text-white mb-4">æÍÏÇÊ ÇáŞíÇÓ</h3>
+      <h3 class="text-xl font-bold text-white mb-4">ÙˆØ­Ø¯Ø§Øª Ø§Ù„Ù‚ÙŠØ§Ø³</h3>
       <form id="unit-form" class="mb-4">
-       <div class="flex gap-2"><input type="text" id="new-unit" class="glass-input flex-1 px-4 py-2 rounded-xl" placeholder="æÍÏÉ ÌÏíÏÉ..."> <button type="submit" class="glass-button-primary px-4 py-2 rounded-xl">?</button>
+       <div class="flex gap-2"><input type="text" id="new-unit" class="glass-input flex-1 px-4 py-2 rounded-xl" placeholder="ÙˆØ­Ø¯Ø© Ø¬Ø¯ÙŠØ¯Ø©..."> <button type="submit" class="glass-button-primary px-4 py-2 rounded-xl">â•</button>
        </div>
       </form>
       <div id="units-list" class="space-y-2"></div>
      </div><!-- Expense Categories -->
      <div class="glass-card rounded-2xl p-6">
-      <h3 class="text-xl font-bold text-white mb-4">ÃäæÇÚ ÇáãÕÑæİÇÊ</h3>
+      <h3 class="text-xl font-bold text-white mb-4">Ø£Ù†ÙˆØ§Ø¹ Ø§Ù„Ù…ØµØ±ÙˆÙØ§Øª</h3>
       <form id="expense-category-form" class="mb-4">
-       <div class="flex gap-2"><input type="text" id="new-expense-category" class="glass-input flex-1 px-4 py-2 rounded-xl" placeholder="äæÚ ÌÏíÏ..."> <button type="submit" class="glass-button-primary px-4 py-2 rounded-xl">?</button>
+       <div class="flex gap-2"><input type="text" id="new-expense-category" class="glass-input flex-1 px-4 py-2 rounded-xl" placeholder="Ù†ÙˆØ¹ Ø¬Ø¯ÙŠØ¯..."> <button type="submit" class="glass-button-primary px-4 py-2 rounded-xl">â•</button>
        </div>
       </form>
       <div id="expense-categories-list" class="space-y-2"></div>
      </div>
     </div><!-- Backup -->
     <div class="glass-card rounded-2xl p-6">
-     <h2 class="text-2xl font-bold text-white mb-4">?? ÇáäÓÎ ÇáÇÍÊíÇØí</h2>
-     <div class="flex gap-3"><button onclick="exportBackup()" class="glass-button-primary flex-1 py-3 rounded-xl font-bold">?? ÊÕÏíÑ äÓÎÉ ÇÍÊíÇØíÉ</button> <button onclick="showMessage('ŞíÏ ÇáÊØæíÑ', 'info')" class="glass-button-secondary flex-1 py-3 rounded-xl font-bold">?? ÇÓÊíÑÇÏ äÓÎÉ ÇÍÊíÇØíÉ</button>
+     <h2 class="text-2xl font-bold text-white mb-4">ğŸ’¾ Ø§Ù„Ù†Ø³Ø® Ø§Ù„Ø§Ø­ØªÙŠØ§Ø·ÙŠ</h2>
+     <div class="flex gap-3"><button onclick="exportBackup()" class="glass-button-primary flex-1 py-3 rounded-xl font-bold">ğŸ“¥ ØªØµØ¯ÙŠØ± Ù†Ø³Ø®Ø© Ø§Ø­ØªÙŠØ§Ø·ÙŠØ©</button> <button onclick="showMessage('Ù‚ÙŠØ¯ Ø§Ù„ØªØ·ÙˆÙŠØ±', 'info')" class="glass-button-secondary flex-1 py-3 rounded-xl font-bold">ğŸ“¤ Ø§Ø³ØªÙŠØ±Ø§Ø¯ Ù†Ø³Ø®Ø© Ø§Ø­ØªÙŠØ§Ø·ÙŠØ©</button>
      </div>
     </div>
     <div class="glass-card rounded-2xl p-6 mt-6">
-     <h2 class="text-2xl font-bold text-white mb-4">?? ÅÍÕÇÆíÇÊ ÇáäÙÇã</h2>
+     <h2 class="text-2xl font-bold text-white mb-4">ğŸ“Š Ø¥Ø­ØµØ§Ø¦ÙŠØ§Øª Ø§Ù„Ù†Ø¸Ø§Ù…</h2>
      <div class="space-y-3">
-      <div class="flex justify-between items-center"><span class="text-slate-300">ÅÌãÇáí ÇáÓÌáÇÊ</span> <span class="text-white font-bold" id="stats-total-records">0</span>
+      <div class="flex justify-between items-center"><span class="text-slate-300">Ø¥Ø¬Ù…Ø§Ù„ÙŠ Ø§Ù„Ø³Ø¬Ù„Ø§Øª</span> <span class="text-white font-bold" id="stats-total-records">0</span>
       </div>
-      <div class="flex justify-between items-center"><span class="text-slate-300">ÇáãÓÇÍÉ ÇáãÓÊÎÏãÉ</span> <span class="text-white font-bold" id="stats-storage">0 / 999</span>
+      <div class="flex justify-between items-center"><span class="text-slate-300">Ø§Ù„Ù…Ø³Ø§Ø­Ø© Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…Ø©</span> <span class="text-white font-bold" id="stats-storage">0 / 999</span>
       </div>
      </div>
     </div>
@@ -1054,17 +1054,17 @@
         // Calculate accounts from journal entries
         function calculateAccounts() {
             const accounts = {
-                'ÇáÕäÏæŞ': 0,
-                'ÇáÈäß': 0,
-                'İæÏÇİæä ßÇÔ': 0,
-                'ÇäÓÊÇ ÈÇí': 0,
-                'ÇáÚãáÇÁ (Ğãã)': 0,
-                'ÇáãæÑÏíä (Ğãã)': 0,
-                'ÇáãÈíÚÇÊ': 0,
-                'ÇáãÔÊÑíÇÊ': 0,
-                'ÇáãÕÑæİÇÊ': 0,
-                'ÊßáİÉ ÇáÈÖÇÚÉ ÇáãÈÇÚÉ': 0,
-                'ÇáãÎÒæä': 0
+                'Ø§Ù„ØµÙ†Ø¯ÙˆÙ‚': 0,
+                'Ø§Ù„Ø¨Ù†Ùƒ': 0,
+                'ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´': 0,
+                'Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ': 0,
+                'Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡ (Ø°Ù…Ù…)': 0,
+                'Ø§Ù„Ù…ÙˆØ±Ø¯ÙŠÙ† (Ø°Ù…Ù…)': 0,
+                'Ø§Ù„Ù…Ø¨ÙŠØ¹Ø§Øª': 0,
+                'Ø§Ù„Ù…Ø´ØªØ±ÙŠØ§Øª': 0,
+                'Ø§Ù„Ù…ØµØ±ÙˆÙØ§Øª': 0,
+                'ØªÙƒÙ„ÙØ© Ø§Ù„Ø¨Ø¶Ø§Ø¹Ø© Ø§Ù„Ù…Ø¨Ø§Ø¹Ø©': 0,
+                'Ø§Ù„Ù…Ø®Ø²ÙˆÙ†': 0
             };
 
             const journalEntries = allData.filter(d => d.type === 'journal_entry');
@@ -1106,7 +1106,7 @@
         document.getElementById('customer-form').addEventListener('submit', async (e) => {
             e.preventDefault();
             if (allData.length >= 999) {
-                showMessage('Êã ÇáæÕæá ááÍÏ ÇáÃŞÕì (999 ÓÌá)', 'error');
+                showMessage('ØªÙ… Ø§Ù„ÙˆØµÙˆÙ„ Ù„Ù„Ø­Ø¯ Ø§Ù„Ø£Ù‚ØµÙ‰ (999 Ø³Ø¬Ù„)', 'error');
                 return;
             }
             const customer = {
@@ -1124,13 +1124,13 @@
                 totalPaid: 0,
                 totalPurchases: 0,
                 isPotential: false,
-                status: 'äÔØ',
+                status: 'Ù†Ø´Ø·',
                 lastContact: new Date().toISOString()
             };
             const result = await window.dataSdk.create(customer);
             if (result.isOk) {
                 e.target.reset();
-                showMessage('Êã ÅÖÇİÉ ÇáÚãíá ÈäÌÇÍ', 'success');
+                showMessage('ØªÙ… Ø¥Ø¶Ø§ÙØ© Ø§Ù„Ø¹Ù…ÙŠÙ„ Ø¨Ù†Ø¬Ø§Ø­', 'success');
             }
         });
 
@@ -1138,7 +1138,7 @@
         document.getElementById('potential-customer-form').addEventListener('submit', async (e) => {
             e.preventDefault();
             if (allData.length >= 999) {
-                showMessage('Êã ÇáæÕæá ááÍÏ ÇáÃŞÕì (999 ÓÌá)', 'error');
+                showMessage('ØªÙ… Ø§Ù„ÙˆØµÙˆÙ„ Ù„Ù„Ø­Ø¯ Ø§Ù„Ø£Ù‚ØµÙ‰ (999 Ø³Ø¬Ù„)', 'error');
                 return;
             }
             const customer = {
@@ -1157,13 +1157,13 @@
                 totalPaid: 0,
                 totalPurchases: 0,
                 isPotential: true,
-                status: 'ãÍÊãá',
+                status: 'Ù…Ø­ØªÙ…Ù„',
                 lastContact: new Date().toISOString()
             };
             const result = await window.dataSdk.create(customer);
             if (result.isOk) {
                 e.target.reset();
-                showMessage('Êã ÅÖÇİÉ ÇáÚãíá ÇáãÍÊãá ÈäÌÇÍ', 'success');
+                showMessage('ØªÙ… Ø¥Ø¶Ø§ÙØ© Ø§Ù„Ø¹Ù…ÙŠÙ„ Ø§Ù„Ù…Ø­ØªÙ…Ù„ Ø¨Ù†Ø¬Ø§Ø­', 'success');
             }
         });
 
@@ -1171,7 +1171,7 @@
         document.getElementById('supplier-form').addEventListener('submit', async (e) => {
             e.preventDefault();
             if (allData.length >= 999) {
-                showMessage('Êã ÇáæÕæá ááÍÏ ÇáÃŞÕì (999 ÓÌá)', 'error');
+                showMessage('ØªÙ… Ø§Ù„ÙˆØµÙˆÙ„ Ù„Ù„Ø­Ø¯ Ø§Ù„Ø£Ù‚ØµÙ‰ (999 Ø³Ø¬Ù„)', 'error');
                 return;
             }
             const supplier = {
@@ -1187,7 +1187,7 @@
             const result = await window.dataSdk.create(supplier);
             if (result.isOk) {
                 e.target.reset();
-                showMessage('Êã ÅÖÇİÉ ÇáãæÑÏ ÈäÌÇÍ', 'success');
+                showMessage('ØªÙ… Ø¥Ø¶Ø§ÙØ© Ø§Ù„Ù…ÙˆØ±Ø¯ Ø¨Ù†Ø¬Ø§Ø­', 'success');
             }
         });
 
@@ -1195,7 +1195,7 @@
         document.getElementById('product-form').addEventListener('submit', async (e) => {
             e.preventDefault();
             if (allData.length >= 999) {
-                showMessage('Êã ÇáæÕæá ááÍÏ ÇáÃŞÕì (999 ÓÌá)', 'error');
+                showMessage('ØªÙ… Ø§Ù„ÙˆØµÙˆÙ„ Ù„Ù„Ø­Ø¯ Ø§Ù„Ø£Ù‚ØµÙ‰ (999 Ø³Ø¬Ù„)', 'error');
                 return;
             }
             const product = {
@@ -1213,7 +1213,7 @@
             const result = await window.dataSdk.create(product);
             if (result.isOk) {
                 e.target.reset();
-                showMessage('Êã ÅÖÇİÉ ÇáãäÊÌ ÈäÌÇÍ', 'success');
+                showMessage('ØªÙ… Ø¥Ø¶Ø§ÙØ© Ø§Ù„Ù…Ù†ØªØ¬ Ø¨Ù†Ø¬Ø§Ø­', 'success');
             }
         });
 
@@ -1228,7 +1228,7 @@
             const invoiceNumber = generateInvoiceNumber();
             
             if (!customer) {
-                showMessage('ÇáÑÌÇÁ ÇÎÊíÇÑ Úãíá', 'error');
+                showMessage('Ø§Ù„Ø±Ø¬Ø§Ø¡ Ø§Ø®ØªÙŠØ§Ø± Ø¹Ù…ÙŠÙ„', 'error');
                 return;
             }
 
@@ -1245,12 +1245,12 @@
                 const product = allData.find(p => p.__backendId === productId);
                 
                 if (!product) {
-                    showMessage('ÇáÑÌÇÁ ÇÎÊíÇÑ ãäÊÌ ÕÍíÍ', 'error');
+                    showMessage('Ø§Ù„Ø±Ø¬Ø§Ø¡ Ø§Ø®ØªÙŠØ§Ø± Ù…Ù†ØªØ¬ ØµØ­ÙŠØ­', 'error');
                     return;
                 }
 
                 if (quantity > product.currentStock) {
-                    showMessage(`ÇáßãíÉ ÇáãÊÇÍÉ ãä ${product.name} åí ${product.currentStock} İŞØ`, 'error');
+                    showMessage(`Ø§Ù„ÙƒÙ…ÙŠØ© Ø§Ù„Ù…ØªØ§Ø­Ø© Ù…Ù† ${product.name} Ù‡ÙŠ ${product.currentStock} ÙÙ‚Ø·`, 'error');
                     return;
                 }
 
@@ -1272,7 +1272,7 @@
             }
 
             if (allData.length + saleItems.length >= 999) {
-                showMessage('Êã ÇáæÕæá ááÍÏ ÇáÃŞÕì (999 ÓÌá)', 'error');
+                showMessage('ØªÙ… Ø§Ù„ÙˆØµÙˆÙ„ Ù„Ù„Ø­Ø¯ Ø§Ù„Ø£Ù‚ØµÙ‰ (999 Ø³Ø¬Ù„)', 'error');
                 return;
             }
 
@@ -1290,7 +1290,7 @@
                     discount: saleItem.discount,
                     total: saleItem.total,
                     paymentMethod: paymentMethod,
-                    paymentStatus: paymentMethod === 'ÂÌá' ? 'ãÚáŞ' : 'ãÏİæÚ',
+                    paymentStatus: paymentMethod === 'Ø¢Ø¬Ù„' ? 'Ù…Ø¹Ù„Ù‚' : 'Ù…Ø¯ÙÙˆØ¹',
                     date: new Date().toISOString()
                 };
                 
@@ -1305,7 +1305,7 @@
             customer.totalPurchases = (customer.totalPurchases || 0) + grandTotal;
             customer.lastContact = new Date().toISOString();
             
-            if (paymentMethod === 'ÂÌá') {
+            if (paymentMethod === 'Ø¢Ø¬Ù„') {
                 customer.currentDebt = (customer.currentDebt || 0) + grandTotal;
                 customer.totalDebt = (customer.totalDebt || 0) + grandTotal;
             }
@@ -1315,28 +1315,28 @@
             // Create journal entry
             const entries = [];
             
-            if (paymentMethod === 'ÂÌá') {
-                // ãä Í/ ÇáÚãáÇÁ (Ğãã)
-                entries.push({account: 'ÇáÚãáÇÁ (Ğãã)', debit: grandTotal, credit: 0});
+            if (paymentMethod === 'Ø¢Ø¬Ù„') {
+                // Ù…Ù† Ø­/ Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡ (Ø°Ù…Ù…)
+                entries.push({account: 'Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡ (Ø°Ù…Ù…)', debit: grandTotal, credit: 0});
             } else {
-                // ãä Í/ ÇáÕäÏæŞ/ÇáÈäß/...
+                // Ù…Ù† Ø­/ Ø§Ù„ØµÙ†Ø¯ÙˆÙ‚/Ø§Ù„Ø¨Ù†Ùƒ/...
                 const accountMap = {
-                    'äŞÏí': 'ÇáÕäÏæŞ',
-                    'Èäß': 'ÇáÈäß',
-                    'İæÏÇİæä ßÇÔ': 'İæÏÇİæä ßÇÔ',
-                    'ÇäÓÊÇ ÈÇí': 'ÇäÓÊÇ ÈÇí'
+                    'Ù†Ù‚Ø¯ÙŠ': 'Ø§Ù„ØµÙ†Ø¯ÙˆÙ‚',
+                    'Ø¨Ù†Ùƒ': 'Ø§Ù„Ø¨Ù†Ùƒ',
+                    'ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´': 'ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´',
+                    'Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ': 'Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ'
                 };
                 entries.push({account: accountMap[paymentMethod], debit: grandTotal, credit: 0});
             }
             
-            // Åáì Í/ ÇáãÈíÚÇÊ
-            entries.push({account: 'ÇáãÈíÚÇÊ', debit: 0, credit: grandTotal});
+            // Ø¥Ù„Ù‰ Ø­/ Ø§Ù„Ù…Ø¨ÙŠØ¹Ø§Øª
+            entries.push({account: 'Ø§Ù„Ù…Ø¨ÙŠØ¹Ø§Øª', debit: 0, credit: grandTotal});
             
-            // ãä Í/ ÊßáİÉ ÇáÈÖÇÚÉ ÇáãÈÇÚÉ
-            entries.push({account: 'ÊßáİÉ ÇáÈÖÇÚÉ ÇáãÈÇÚÉ', debit: totalCOGS, credit: 0});
+            // Ù…Ù† Ø­/ ØªÙƒÙ„ÙØ© Ø§Ù„Ø¨Ø¶Ø§Ø¹Ø© Ø§Ù„Ù…Ø¨Ø§Ø¹Ø©
+            entries.push({account: 'ØªÙƒÙ„ÙØ© Ø§Ù„Ø¨Ø¶Ø§Ø¹Ø© Ø§Ù„Ù…Ø¨Ø§Ø¹Ø©', debit: totalCOGS, credit: 0});
             
-            // Åáì Í/ ÇáãÎÒæä
-            entries.push({account: 'ÇáãÎÒæä', debit: 0, credit: totalCOGS});
+            // Ø¥Ù„Ù‰ Ø­/ Ø§Ù„Ù…Ø®Ø²ÙˆÙ†
+            entries.push({account: 'Ø§Ù„Ù…Ø®Ø²ÙˆÙ†', debit: 0, credit: totalCOGS});
 
             await createJournalEntry(entries, 'sale', invoiceNumber);
 
@@ -1345,34 +1345,34 @@
                 <div class="sale-item glass-card p-4 rounded-xl mb-4">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3">
                         <div>
-                            <label class="block text-slate-300 mb-2">ÇáãäÊÌ</label>
+                            <label class="block text-slate-300 mb-2">Ø§Ù„Ù…Ù†ØªØ¬</label>
                             <select class="sale-product glass-input w-full px-4 py-3 rounded-xl" required>
-                                <option value="">ÇÎÊÑ ãäÊÌ</option>
+                                <option value="">Ø§Ø®ØªØ± Ù…Ù†ØªØ¬</option>
                             </select>
                         </div>
                         <div>
-                            <label class="block text-slate-300 mb-2">ÇáßãíÉ</label>
+                            <label class="block text-slate-300 mb-2">Ø§Ù„ÙƒÙ…ÙŠØ©</label>
                             <input type="number" class="sale-quantity glass-input w-full px-4 py-3 rounded-xl" min="1" step="0.01" required>
                         </div>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div>
-                            <label class="block text-slate-300 mb-2">ÇáÓÚÑ</label>
+                            <label class="block text-slate-300 mb-2">Ø§Ù„Ø³Ø¹Ø±</label>
                             <input type="number" class="sale-price glass-input w-full px-4 py-3 rounded-xl" step="0.01" required>
                         </div>
                         <div>
-                            <label class="block text-slate-300 mb-2">ÇáÎÕã %</label>
+                            <label class="block text-slate-300 mb-2">Ø§Ù„Ø®ØµÙ… %</label>
                             <input type="number" class="sale-discount glass-input w-full px-4 py-3 rounded-xl" min="0" max="100" step="0.01" value="0">
                         </div>
                         <div>
-                            <label class="block text-slate-300 mb-2">ÇáÅÌãÇáí</label>
+                            <label class="block text-slate-300 mb-2">Ø§Ù„Ø¥Ø¬Ù…Ø§Ù„ÙŠ</label>
                             <input type="text" class="sale-item-total glass-input w-full px-4 py-3 rounded-xl" readonly>
                         </div>
                     </div>
                 </div>
             `;
             updateProductSelects();
-            showMessage('Êã ÅÖÇİÉ ÇáİÇÊæÑÉ ÈäÌÇÍ', 'success');
+            showMessage('ØªÙ… Ø¥Ø¶Ø§ÙØ© Ø§Ù„ÙØ§ØªÙˆØ±Ø© Ø¨Ù†Ø¬Ø§Ø­', 'success');
         });
 
         // Purchase form
@@ -1386,7 +1386,7 @@
             const invoiceNumber = generateInvoiceNumber();
             
             if (!supplier) {
-                showMessage('ÇáÑÌÇÁ ÇÎÊíÇÑ ãæÑÏ', 'error');
+                showMessage('Ø§Ù„Ø±Ø¬Ø§Ø¡ Ø§Ø®ØªÙŠØ§Ø± Ù…ÙˆØ±Ø¯', 'error');
                 return;
             }
 
@@ -1400,7 +1400,7 @@
                 const price = parseFloat(item.querySelector('.purchase-price').value);
                 
                 if (!productName) {
-                    showMessage('ÇáÑÌÇÁ ÅÏÎÇá ÇÓã ÇáãäÊÌ', 'error');
+                    showMessage('Ø§Ù„Ø±Ø¬Ø§Ø¡ Ø¥Ø¯Ø®Ø§Ù„ Ø§Ø³Ù… Ø§Ù„Ù…Ù†ØªØ¬', 'error');
                     return;
                 }
 
@@ -1416,7 +1416,7 @@
             }
 
             if (allData.length + purchaseItems.length >= 999) {
-                showMessage('Êã ÇáæÕæá ááÍÏ ÇáÃŞÕì (999 ÓÌá)', 'error');
+                showMessage('ØªÙ… Ø§Ù„ÙˆØµÙˆÙ„ Ù„Ù„Ø­Ø¯ Ø§Ù„Ø£Ù‚ØµÙ‰ (999 Ø³Ø¬Ù„)', 'error');
                 return;
             }
 
@@ -1432,7 +1432,7 @@
                     price: purchaseItem.price,
                     total: purchaseItem.total,
                     paymentMethod: paymentMethod,
-                    paymentStatus: paymentMethod === 'ÂÌá' ? 'ãÚáŞ' : 'ãÏİæÚ',
+                    paymentStatus: paymentMethod === 'Ø¢Ø¬Ù„' ? 'Ù…Ø¹Ù„Ù‚' : 'Ù…Ø¯ÙÙˆØ¹',
                     date: new Date().toISOString()
                 };
                 
@@ -1447,7 +1447,7 @@
             }
 
             // Update supplier
-            if (paymentMethod === 'ÂÌá') {
+            if (paymentMethod === 'Ø¢Ø¬Ù„') {
                 supplier.currentDebt = (supplier.currentDebt || 0) + grandTotal;
                 supplier.totalDebt = (supplier.totalDebt || 0) + grandTotal;
             }
@@ -1457,19 +1457,19 @@
             // Create journal entry
             const entries = [];
             
-            // ãä Í/ ÇáãÔÊÑíÇÊ
-            entries.push({account: 'ÇáãÔÊÑíÇÊ', debit: grandTotal, credit: 0});
+            // Ù…Ù† Ø­/ Ø§Ù„Ù…Ø´ØªØ±ÙŠØ§Øª
+            entries.push({account: 'Ø§Ù„Ù…Ø´ØªØ±ÙŠØ§Øª', debit: grandTotal, credit: 0});
             
-            if (paymentMethod === 'ÂÌá') {
-                // Åáì Í/ ÇáãæÑÏíä (Ğãã)
-                entries.push({account: 'ÇáãæÑÏíä (Ğãã)', debit: 0, credit: grandTotal});
+            if (paymentMethod === 'Ø¢Ø¬Ù„') {
+                // Ø¥Ù„Ù‰ Ø­/ Ø§Ù„Ù…ÙˆØ±Ø¯ÙŠÙ† (Ø°Ù…Ù…)
+                entries.push({account: 'Ø§Ù„Ù…ÙˆØ±Ø¯ÙŠÙ† (Ø°Ù…Ù…)', debit: 0, credit: grandTotal});
             } else {
-                // Åáì Í/ ÇáÕäÏæŞ/ÇáÈäß/...
+                // Ø¥Ù„Ù‰ Ø­/ Ø§Ù„ØµÙ†Ø¯ÙˆÙ‚/Ø§Ù„Ø¨Ù†Ùƒ/...
                 const accountMap = {
-                    'äŞÏí': 'ÇáÕäÏæŞ',
-                    'Èäß': 'ÇáÈäß',
-                    'İæÏÇİæä ßÇÔ': 'İæÏÇİæä ßÇÔ',
-                    'ÇäÓÊÇ ÈÇí': 'ÇäÓÊÇ ÈÇí'
+                    'Ù†Ù‚Ø¯ÙŠ': 'Ø§Ù„ØµÙ†Ø¯ÙˆÙ‚',
+                    'Ø¨Ù†Ùƒ': 'Ø§Ù„Ø¨Ù†Ùƒ',
+                    'ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´': 'ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´',
+                    'Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ': 'Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ'
                 };
                 entries.push({account: accountMap[paymentMethod], debit: 0, credit: grandTotal});
             }
@@ -1481,34 +1481,34 @@
                 <div class="purchase-item glass-card p-4 rounded-xl mb-4">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3">
                         <div>
-                            <label class="block text-slate-300 mb-2">ÇÓã ÇáãäÊÌ/ÇáÎÇã</label>
-                            <input type="text" class="purchase-product-name glass-input w-full px-4 py-3 rounded-xl" placeholder="ÃÏÎá ÇÓã ÇáãäÊÌ" required>
+                            <label class="block text-slate-300 mb-2">Ø§Ø³Ù… Ø§Ù„Ù…Ù†ØªØ¬/Ø§Ù„Ø®Ø§Ù…</label>
+                            <input type="text" class="purchase-product-name glass-input w-full px-4 py-3 rounded-xl" placeholder="Ø£Ø¯Ø®Ù„ Ø§Ø³Ù… Ø§Ù„Ù…Ù†ØªØ¬" required>
                         </div>
                         <div>
-                            <label class="block text-slate-300 mb-2">ÇáßãíÉ</label>
+                            <label class="block text-slate-300 mb-2">Ø§Ù„ÙƒÙ…ÙŠØ©</label>
                             <input type="number" class="purchase-quantity glass-input w-full px-4 py-3 rounded-xl" min="1" step="0.01" required>
                         </div>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-slate-300 mb-2">ÇáÓÚÑ</label>
+                            <label class="block text-slate-300 mb-2">Ø§Ù„Ø³Ø¹Ø±</label>
                             <input type="number" class="purchase-price glass-input w-full px-4 py-3 rounded-xl" step="0.01" required>
                         </div>
                         <div>
-                            <label class="block text-slate-300 mb-2">ÇáÅÌãÇáí</label>
+                            <label class="block text-slate-300 mb-2">Ø§Ù„Ø¥Ø¬Ù…Ø§Ù„ÙŠ</label>
                             <input type="text" class="purchase-item-total glass-input w-full px-4 py-3 rounded-xl" readonly>
                         </div>
                     </div>
                 </div>
             `;
-            showMessage('Êã ÅÖÇİÉ ÇáİÇÊæÑÉ ÈäÌÇÍ', 'success');
+            showMessage('ØªÙ… Ø¥Ø¶Ø§ÙØ© Ø§Ù„ÙØ§ØªÙˆØ±Ø© Ø¨Ù†Ø¬Ø§Ø­', 'success');
         });
 
         // Expense form
         document.getElementById('expense-form').addEventListener('submit', async (e) => {
             e.preventDefault();
             if (allData.length >= 999) {
-                showMessage('Êã ÇáæÕæá ááÍÏ ÇáÃŞÕì (999 ÓÌá)', 'error');
+                showMessage('ØªÙ… Ø§Ù„ÙˆØµÙˆÙ„ Ù„Ù„Ø­Ø¯ Ø§Ù„Ø£Ù‚ØµÙ‰ (999 Ø³Ø¬Ù„)', 'error');
                 return;
             }
             
@@ -1529,21 +1529,21 @@
             if (result.isOk) {
                 // Create journal entry
                 const accountMap = {
-                    'äŞÏí': 'ÇáÕäÏæŞ',
-                    'Èäß': 'ÇáÈäß',
-                    'İæÏÇİæä ßÇÔ': 'İæÏÇİæä ßÇÔ',
-                    'ÇäÓÊÇ ÈÇí': 'ÇäÓÊÇ ÈÇí'
+                    'Ù†Ù‚Ø¯ÙŠ': 'Ø§Ù„ØµÙ†Ø¯ÙˆÙ‚',
+                    'Ø¨Ù†Ùƒ': 'Ø§Ù„Ø¨Ù†Ùƒ',
+                    'ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´': 'ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´',
+                    'Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ': 'Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ'
                 };
                 
                 const entries = [
-                    {account: 'ÇáãÕÑæİÇÊ', debit: amount, credit: 0},
+                    {account: 'Ø§Ù„Ù…ØµØ±ÙˆÙØ§Øª', debit: amount, credit: 0},
                     {account: accountMap[paymentMethod], debit: 0, credit: amount}
                 ];
                 
                 await createJournalEntry(entries, 'expense', expense.__backendId);
                 
                 e.target.reset();
-                showMessage('Êã ÅÖÇİÉ ÇáãÕÑæİ ÈäÌÇÍ', 'success');
+                showMessage('ØªÙ… Ø¥Ø¶Ø§ÙØ© Ø§Ù„Ù…ØµØ±ÙˆÙ Ø¨Ù†Ø¬Ø§Ø­', 'success');
             }
         });
 
@@ -1551,7 +1551,7 @@
         document.getElementById('payment-form').addEventListener('submit', async (e) => {
             e.preventDefault();
             if (allData.length >= 999) {
-                showMessage('Êã ÇáæÕæá ááÍÏ ÇáÃŞÕì (999 ÓÌá)', 'error');
+                showMessage('ØªÙ… Ø§Ù„ÙˆØµÙˆÙ„ Ù„Ù„Ø­Ø¯ Ø§Ù„Ø£Ù‚ØµÙ‰ (999 Ø³Ø¬Ù„)', 'error');
                 return;
             }
             
@@ -1565,13 +1565,13 @@
             if (paymentType === 'customer') {
                 entity = allData.find(c => c.type === 'customer' && c.__backendId === entityId);
                 if (!entity || amount > entity.currentDebt) {
-                    showMessage('ÇáãÈáÛ ÃßÈÑ ãä ÇáãÏíæäíÉ ÇáÍÇáíÉ', 'error');
+                    showMessage('Ø§Ù„Ù…Ø¨Ù„Øº Ø£ÙƒØ¨Ø± Ù…Ù† Ø§Ù„Ù…Ø¯ÙŠÙˆÙ†ÙŠØ© Ø§Ù„Ø­Ø§Ù„ÙŠØ©', 'error');
                     return;
                 }
             } else {
                 entity = allData.find(s => s.type === 'supplier' && s.__backendId === entityId);
                 if (!entity || amount > entity.currentDebt) {
-                    showMessage('ÇáãÈáÛ ÃßÈÑ ãä ÇáãÏíæäíÉ ÇáÍÇáíÉ', 'error');
+                    showMessage('Ø§Ù„Ù…Ø¨Ù„Øº Ø£ÙƒØ¨Ø± Ù…Ù† Ø§Ù„Ù…Ø¯ÙŠÙˆÙ†ÙŠØ© Ø§Ù„Ø­Ø§Ù„ÙŠØ©', 'error');
                     return;
                 }
             }
@@ -1596,27 +1596,27 @@
                 
                 // Create journal entry
                 const accountMap = {
-                    'äŞÏí': 'ÇáÕäÏæŞ',
-                    'Èäß': 'ÇáÈäß',
-                    'İæÏÇİæä ßÇÔ': 'İæÏÇİæä ßÇÔ',
-                    'ÇäÓÊÇ ÈÇí': 'ÇäÓÊÇ ÈÇí'
+                    'Ù†Ù‚Ø¯ÙŠ': 'Ø§Ù„ØµÙ†Ø¯ÙˆÙ‚',
+                    'Ø¨Ù†Ùƒ': 'Ø§Ù„Ø¨Ù†Ùƒ',
+                    'ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´': 'ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´',
+                    'Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ': 'Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ'
                 };
                 
                 const entries = [];
                 if (paymentType === 'customer') {
-                    // ãä Í/ ÇáÕäÏæŞ Åáì Í/ ÇáÚãáÇÁ (Ğãã)
+                    // Ù…Ù† Ø­/ Ø§Ù„ØµÙ†Ø¯ÙˆÙ‚ Ø¥Ù„Ù‰ Ø­/ Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡ (Ø°Ù…Ù…)
                     entries.push({account: accountMap[paymentMethod], debit: amount, credit: 0});
-                    entries.push({account: 'ÇáÚãáÇÁ (Ğãã)', debit: 0, credit: amount});
+                    entries.push({account: 'Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡ (Ø°Ù…Ù…)', debit: 0, credit: amount});
                 } else {
-                    // ãä Í/ ÇáãæÑÏíä (Ğãã) Åáì Í/ ÇáÕäÏæŞ
-                    entries.push({account: 'ÇáãæÑÏíä (Ğãã)', debit: amount, credit: 0});
+                    // Ù…Ù† Ø­/ Ø§Ù„Ù…ÙˆØ±Ø¯ÙŠÙ† (Ø°Ù…Ù…) Ø¥Ù„Ù‰ Ø­/ Ø§Ù„ØµÙ†Ø¯ÙˆÙ‚
+                    entries.push({account: 'Ø§Ù„Ù…ÙˆØ±Ø¯ÙŠÙ† (Ø°Ù…Ù…)', debit: amount, credit: 0});
                     entries.push({account: accountMap[paymentMethod], debit: 0, credit: amount});
                 }
                 
                 await createJournalEntry(entries, 'payment', payment.__backendId);
                 
                 e.target.reset();
-                showMessage('Êã ÊÓÌíá ÇáÓÏÇÏ ÈäÌÇÍ', 'success');
+                showMessage('ØªÙ… ØªØ³Ø¬ÙŠÙ„ Ø§Ù„Ø³Ø¯Ø§Ø¯ Ø¨Ù†Ø¬Ø§Ø­', 'success');
             }
         });
 
@@ -1624,7 +1624,7 @@
         document.getElementById('follow-up-form').addEventListener('submit', async (e) => {
             e.preventDefault();
             if (allData.length >= 999) {
-                showMessage('Êã ÇáæÕæá ááÍÏ ÇáÃŞÕì (999 ÓÌá)', 'error');
+                showMessage('ØªÙ… Ø§Ù„ÙˆØµÙˆÙ„ Ù„Ù„Ø­Ø¯ Ø§Ù„Ø£Ù‚ØµÙ‰ (999 Ø³Ø¬Ù„)', 'error');
                 return;
             }
             const customerId = document.getElementById('follow-up-customer').value;
@@ -1646,7 +1646,7 @@
                 await window.dataSdk.update(customer);
                 
                 e.target.reset();
-                showMessage('Êã ÅÖÇİÉ ÇáãÊÇÈÚÉ ÈäÌÇÍ', 'success');
+                showMessage('ØªÙ… Ø¥Ø¶Ø§ÙØ© Ø§Ù„Ù…ØªØ§Ø¨Ø¹Ø© Ø¨Ù†Ø¬Ø§Ø­', 'success');
             }
         });
 
@@ -1669,30 +1669,30 @@
                 await window.dataSdk.update(existingSettings);
             } else {
                 if (allData.length >= 999) {
-                    showMessage('Êã ÇáæÕæá ááÍÏ ÇáÃŞÕì (999 ÓÌá)', 'error');
+                    showMessage('ØªÙ… Ø§Ù„ÙˆØµÙˆÙ„ Ù„Ù„Ø­Ø¯ Ø§Ù„Ø£Ù‚ØµÙ‰ (999 Ø³Ø¬Ù„)', 'error');
                     return;
                 }
                 await window.dataSdk.create(settings);
             }
             
             // Update app name in header
-            document.querySelector('header h1').textContent = `?? ${settings.appName}`;
+            document.querySelector('header h1').textContent = `ğŸŒ¾ ${settings.appName}`;
             
-            showMessage('Êã ÍİÙ ÇáÅÚÏÇÏÇÊ ÈäÌÇÍ', 'success');
+            showMessage('ØªÙ… Ø­ÙØ¸ Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø¨Ù†Ø¬Ø§Ø­', 'success');
         });
 
         // Customer type form
         document.getElementById('customer-type-form').addEventListener('submit', async (e) => {
             e.preventDefault();
             if (allData.length >= 999) {
-                showMessage('Êã ÇáæÕæá ááÍÏ ÇáÃŞÕì (999 ÓÌá)', 'error');
+                showMessage('ØªÙ… Ø§Ù„ÙˆØµÙˆÙ„ Ù„Ù„Ø­Ø¯ Ø§Ù„Ø£Ù‚ØµÙ‰ (999 Ø³Ø¬Ù„)', 'error');
                 return;
             }
             const value = document.getElementById('new-customer-type').value.trim();
             if (value) {
                 await window.dataSdk.create({type: 'customer_type', value: value});
                 document.getElementById('new-customer-type').value = '';
-                showMessage('Êã ÇáÅÖÇİÉ ÈäÌÇÍ', 'success');
+                showMessage('ØªÙ… Ø§Ù„Ø¥Ø¶Ø§ÙØ© Ø¨Ù†Ø¬Ø§Ø­', 'success');
             }
         });
 
@@ -1700,14 +1700,14 @@
         document.getElementById('crop-form').addEventListener('submit', async (e) => {
             e.preventDefault();
             if (allData.length >= 999) {
-                showMessage('Êã ÇáæÕæá ááÍÏ ÇáÃŞÕì (999 ÓÌá)', 'error');
+                showMessage('ØªÙ… Ø§Ù„ÙˆØµÙˆÙ„ Ù„Ù„Ø­Ø¯ Ø§Ù„Ø£Ù‚ØµÙ‰ (999 Ø³Ø¬Ù„)', 'error');
                 return;
             }
             const value = document.getElementById('new-crop').value.trim();
             if (value) {
                 await window.dataSdk.create({type: 'crop', value: value});
                 document.getElementById('new-crop').value = '';
-                showMessage('Êã ÇáÅÖÇİÉ ÈäÌÇÍ', 'success');
+                showMessage('ØªÙ… Ø§Ù„Ø¥Ø¶Ø§ÙØ© Ø¨Ù†Ø¬Ø§Ø­', 'success');
             }
         });
 
@@ -1715,14 +1715,14 @@
         document.getElementById('unit-form').addEventListener('submit', async (e) => {
             e.preventDefault();
             if (allData.length >= 999) {
-                showMessage('Êã ÇáæÕæá ááÍÏ ÇáÃŞÕì (999 ÓÌá)', 'error');
+                showMessage('ØªÙ… Ø§Ù„ÙˆØµÙˆÙ„ Ù„Ù„Ø­Ø¯ Ø§Ù„Ø£Ù‚ØµÙ‰ (999 Ø³Ø¬Ù„)', 'error');
                 return;
             }
             const value = document.getElementById('new-unit').value.trim();
             if (value) {
                 await window.dataSdk.create({type: 'unit', value: value});
                 document.getElementById('new-unit').value = '';
-                showMessage('Êã ÇáÅÖÇİÉ ÈäÌÇÍ', 'success');
+                showMessage('ØªÙ… Ø§Ù„Ø¥Ø¶Ø§ÙØ© Ø¨Ù†Ø¬Ø§Ø­', 'success');
             }
         });
 
@@ -1730,14 +1730,14 @@
         document.getElementById('expense-category-form').addEventListener('submit', async (e) => {
             e.preventDefault();
             if (allData.length >= 999) {
-                showMessage('Êã ÇáæÕæá ááÍÏ ÇáÃŞÕì (999 ÓÌá)', 'error');
+                showMessage('ØªÙ… Ø§Ù„ÙˆØµÙˆÙ„ Ù„Ù„Ø­Ø¯ Ø§Ù„Ø£Ù‚ØµÙ‰ (999 Ø³Ø¬Ù„)', 'error');
                 return;
             }
             const value = document.getElementById('new-expense-category').value.trim();
             if (value) {
                 await window.dataSdk.create({type: 'expense_category', value: value});
                 document.getElementById('new-expense-category').value = '';
-                showMessage('Êã ÇáÅÖÇİÉ ÈäÌÇÍ', 'success');
+                showMessage('ØªÙ… Ø§Ù„Ø¥Ø¶Ø§ÙØ© Ø¨Ù†Ø¬Ø§Ø­', 'success');
             }
         });
 
@@ -1749,31 +1749,31 @@
             newItem.innerHTML = `
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3">
                     <div>
-                        <label class="block text-slate-300 mb-2">ÇáãäÊÌ</label>
+                        <label class="block text-slate-300 mb-2">Ø§Ù„Ù…Ù†ØªØ¬</label>
                         <select class="sale-product glass-input w-full px-4 py-3 rounded-xl" required>
-                            <option value="">ÇÎÊÑ ãäÊÌ</option>
+                            <option value="">Ø§Ø®ØªØ± Ù…Ù†ØªØ¬</option>
                         </select>
                     </div>
                     <div>
-                        <label class="block text-slate-300 mb-2">ÇáßãíÉ</label>
+                        <label class="block text-slate-300 mb-2">Ø§Ù„ÙƒÙ…ÙŠØ©</label>
                         <input type="number" class="sale-quantity glass-input w-full px-4 py-3 rounded-xl" min="1" step="0.01" required>
                     </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-3">
                     <div>
-                        <label class="block text-slate-300 mb-2">ÇáÓÚÑ</label>
+                        <label class="block text-slate-300 mb-2">Ø§Ù„Ø³Ø¹Ø±</label>
                         <input type="number" class="sale-price glass-input w-full px-4 py-3 rounded-xl" step="0.01" required>
                     </div>
                     <div>
-                        <label class="block text-slate-300 mb-2">ÇáÎÕã %</label>
+                        <label class="block text-slate-300 mb-2">Ø§Ù„Ø®ØµÙ… %</label>
                         <input type="number" class="sale-discount glass-input w-full px-4 py-3 rounded-xl" min="0" max="100" step="0.01" value="0">
                     </div>
                     <div>
-                        <label class="block text-slate-300 mb-2">ÇáÅÌãÇáí</label>
+                        <label class="block text-slate-300 mb-2">Ø§Ù„Ø¥Ø¬Ù…Ø§Ù„ÙŠ</label>
                         <input type="text" class="sale-item-total glass-input w-full px-4 py-3 rounded-xl" readonly>
                     </div>
                 </div>
-                <button type="button" onclick="removeSaleItem(this)" class="glass-button-secondary px-3 py-1 rounded-lg text-sm">??? ÍĞİ ÇáÈäÏ</button>
+                <button type="button" onclick="removeSaleItem(this)" class="glass-button-secondary px-3 py-1 rounded-lg text-sm">ğŸ—‘ï¸ Ø­Ø°Ù Ø§Ù„Ø¨Ù†Ø¯</button>
             `;
             container.appendChild(newItem);
             updateProductSelects();
@@ -1785,7 +1785,7 @@
                 btn.closest('.sale-item').remove();
                 updateSaleGrandTotal();
             } else {
-                showMessage('íÌÈ ÇáÇÍÊİÇÙ ÈÈäÏ æÇÍÏ Úáì ÇáÃŞá', 'error');
+                showMessage('ÙŠØ¬Ø¨ Ø§Ù„Ø§Ø­ØªÙØ§Ø¸ Ø¨Ø¨Ù†Ø¯ ÙˆØ§Ø­Ø¯ Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„', 'error');
             }
         }
 
@@ -1797,25 +1797,25 @@
             newItem.innerHTML = `
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3">
                     <div>
-                        <label class="block text-slate-300 mb-2">ÇÓã ÇáãäÊÌ/ÇáÎÇã</label>
-                        <input type="text" class="purchase-product-name glass-input w-full px-4 py-3 rounded-xl" placeholder="ÃÏÎá ÇÓã ÇáãäÊÌ" required>
+                        <label class="block text-slate-300 mb-2">Ø§Ø³Ù… Ø§Ù„Ù…Ù†ØªØ¬/Ø§Ù„Ø®Ø§Ù…</label>
+                        <input type="text" class="purchase-product-name glass-input w-full px-4 py-3 rounded-xl" placeholder="Ø£Ø¯Ø®Ù„ Ø§Ø³Ù… Ø§Ù„Ù…Ù†ØªØ¬" required>
                     </div>
                     <div>
-                        <label class="block text-slate-300 mb-2">ÇáßãíÉ</label>
+                        <label class="block text-slate-300 mb-2">Ø§Ù„ÙƒÙ…ÙŠØ©</label>
                         <input type="number" class="purchase-quantity glass-input w-full px-4 py-3 rounded-xl" min="1" step="0.01" required>
                     </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3">
                     <div>
-                        <label class="block text-slate-300 mb-2">ÇáÓÚÑ</label>
+                        <label class="block text-slate-300 mb-2">Ø§Ù„Ø³Ø¹Ø±</label>
                         <input type="number" class="purchase-price glass-input w-full px-4 py-3 rounded-xl" step="0.01" required>
                     </div>
                     <div>
-                        <label class="block text-slate-300 mb-2">ÇáÅÌãÇáí</label>
+                        <label class="block text-slate-300 mb-2">Ø§Ù„Ø¥Ø¬Ù…Ø§Ù„ÙŠ</label>
                         <input type="text" class="purchase-item-total glass-input w-full px-4 py-3 rounded-xl" readonly>
                     </div>
                 </div>
-                <button type="button" onclick="removePurchaseItem(this)" class="glass-button-secondary px-3 py-1 rounded-lg text-sm">??? ÍĞİ ÇáÈäÏ</button>
+                <button type="button" onclick="removePurchaseItem(this)" class="glass-button-secondary px-3 py-1 rounded-lg text-sm">ğŸ—‘ï¸ Ø­Ø°Ù Ø§Ù„Ø¨Ù†Ø¯</button>
             `;
             container.appendChild(newItem);
             attachPurchaseItemListeners(newItem);
@@ -1827,7 +1827,7 @@
                 btn.closest('.purchase-item').remove();
                 updatePurchaseGrandTotal();
             } else {
-                showMessage('íÌÈ ÇáÇÍÊİÇÙ ÈÈäÏ æÇÍÏ Úáì ÇáÃŞá', 'error');
+                showMessage('ÙŠØ¬Ø¨ Ø§Ù„Ø§Ø­ØªÙØ§Ø¸ Ø¨Ø¨Ù†Ø¯ ÙˆØ§Ø­Ø¯ Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„', 'error');
             }
         }
 
@@ -1839,10 +1839,10 @@
                 const price = parseFloat(item.querySelector('.sale-price').value) || 0;
                 const discount = parseFloat(item.querySelector('.sale-discount').value) || 0;
                 const itemTotal = quantity * price * (1 - discount / 100);
-                item.querySelector('.sale-item-total').value = `${itemTotal.toFixed(2)} Ì.ã`;
+                item.querySelector('.sale-item-total').value = `${itemTotal.toFixed(2)} Ø¬.Ù…`;
                 grandTotal += itemTotal;
             });
-            document.getElementById('sale-grand-total').textContent = `${grandTotal.toFixed(2)} Ì.ã`;
+            document.getElementById('sale-grand-total').textContent = `${grandTotal.toFixed(2)} Ø¬.Ù…`;
         }
 
         // Update purchase grand total
@@ -1852,10 +1852,10 @@
                 const quantity = parseFloat(item.querySelector('.purchase-quantity').value) || 0;
                 const price = parseFloat(item.querySelector('.purchase-price').value) || 0;
                 const itemTotal = quantity * price;
-                item.querySelector('.purchase-item-total').value = `${itemTotal.toFixed(2)} Ì.ã`;
+                item.querySelector('.purchase-item-total').value = `${itemTotal.toFixed(2)} Ø¬.Ù…`;
                 grandTotal += itemTotal;
             });
-            document.getElementById('purchase-grand-total').textContent = `${grandTotal.toFixed(2)} Ì.ã`;
+            document.getElementById('purchase-grand-total').textContent = `${grandTotal.toFixed(2)} Ø¬.Ù…`;
         }
 
         // Attach purchase item listeners
@@ -1875,7 +1875,7 @@
                 (c.phone && c.phone.includes(searchTerm))
             );
             
-            select.innerHTML = '<option value="">ÇÎÊÑ Úãíá</option>' + 
+            select.innerHTML = '<option value="">Ø§Ø®ØªØ± Ø¹Ù…ÙŠÙ„</option>' + 
                 filtered.map(c => `<option value="${c.__backendId}">${c.name} - ${c.phone}</option>`).join('');
         });
 
@@ -1886,17 +1886,17 @@
             const label = document.getElementById('payment-entity-label');
             
             if (paymentType === 'customer') {
-                label.textContent = 'ÇáÚãíá';
+                label.textContent = 'Ø§Ù„Ø¹Ù…ÙŠÙ„';
                 const customers = allData.filter(d => d.type === 'customer' && d.currentDebt > 0);
-                entitySelect.innerHTML = '<option value="">ÇÎÊÑ Úãíá</option>' + 
-                    customers.map(c => `<option value="${c.__backendId}">${c.name} - ${c.currentDebt.toFixed(2)} Ì.ã</option>`).join('');
+                entitySelect.innerHTML = '<option value="">Ø§Ø®ØªØ± Ø¹Ù…ÙŠÙ„</option>' + 
+                    customers.map(c => `<option value="${c.__backendId}">${c.name} - ${c.currentDebt.toFixed(2)} Ø¬.Ù…</option>`).join('');
             } else if (paymentType === 'supplier') {
-                label.textContent = 'ÇáãæÑÏ';
+                label.textContent = 'Ø§Ù„Ù…ÙˆØ±Ø¯';
                 const suppliers = allData.filter(d => d.type === 'supplier' && d.currentDebt > 0);
-                entitySelect.innerHTML = '<option value="">ÇÎÊÑ ãæÑÏ</option>' + 
-                    suppliers.map(s => `<option value="${s.__backendId}">${s.name} - ${s.currentDebt.toFixed(2)} Ì.ã</option>`).join('');
+                entitySelect.innerHTML = '<option value="">Ø§Ø®ØªØ± Ù…ÙˆØ±Ø¯</option>' + 
+                    suppliers.map(s => `<option value="${s.__backendId}">${s.name} - ${s.currentDebt.toFixed(2)} Ø¬.Ù…</option>`).join('');
             } else {
-                entitySelect.innerHTML = '<option value="">ÇÎÊÑ ÇáÌåÉ</option>';
+                entitySelect.innerHTML = '<option value="">Ø§Ø®ØªØ± Ø§Ù„Ø¬Ù‡Ø©</option>';
             }
         }
 
@@ -1906,8 +1906,8 @@
             
             document.querySelectorAll('.sale-product').forEach(select => {
                 const currentValue = select.value;
-                select.innerHTML = '<option value="">ÇÎÊÑ ãäÊÌ</option>' + 
-                    products.map(p => `<option value="${p.__backendId}">${p.name} - ${p.sellingPrice} Ì.ã (ãÊæİÑ: ${p.currentStock})</option>`).join('');
+                select.innerHTML = '<option value="">Ø§Ø®ØªØ± Ù…Ù†ØªØ¬</option>' + 
+                    products.map(p => `<option value="${p.__backendId}">${p.name} - ${p.sellingPrice} Ø¬.Ù… (Ù…ØªÙˆÙØ±: ${p.currentStock})</option>`).join('');
                 select.value = currentValue;
                 
                 select.onchange = function() {
@@ -1929,11 +1929,11 @@
             const customers = allData.filter(d => d.type === 'customer');
             
             const saleCustomer = document.getElementById('sale-customer');
-            saleCustomer.innerHTML = '<option value="">ÇÎÊÑ Úãíá</option>' + 
+            saleCustomer.innerHTML = '<option value="">Ø§Ø®ØªØ± Ø¹Ù…ÙŠÙ„</option>' + 
                 customers.map(c => `<option value="${c.__backendId}">${c.name} - ${c.phone}</option>`).join('');
             
             const followUpCustomer = document.getElementById('follow-up-customer');
-            followUpCustomer.innerHTML = '<option value="">ÇÎÊÑ Úãíá</option>' + 
+            followUpCustomer.innerHTML = '<option value="">Ø§Ø®ØªØ± Ø¹Ù…ÙŠÙ„</option>' + 
                 customers.map(c => `<option value="${c.__backendId}">${c.name}</option>`).join('');
         }
 
@@ -1942,7 +1942,7 @@
             const suppliers = allData.filter(d => d.type === 'supplier');
             
             const purchaseSupplier = document.getElementById('purchase-supplier');
-            purchaseSupplier.innerHTML = '<option value="">ÇÎÊÑ ãæÑÏ</option>' + 
+            purchaseSupplier.innerHTML = '<option value="">Ø§Ø®ØªØ± Ù…ÙˆØ±Ø¯</option>' + 
                 suppliers.map(s => `<option value="${s.__backendId}">${s.name}</option>`).join('');
         }
 
@@ -1961,7 +1961,7 @@
             customerTypeSelects.forEach(select => {
                 if (select) {
                     const currentValue = select.value;
-                    select.innerHTML = '<option value="">ÇÎÊÑ äæÚ ÇáÚãíá</option>' + 
+                    select.innerHTML = '<option value="">Ø§Ø®ØªØ± Ù†ÙˆØ¹ Ø§Ù„Ø¹Ù…ÙŠÙ„</option>' + 
                         customerTypes.map(ct => `<option value="${ct.value}">${ct.value}</option>`).join('');
                     select.value = currentValue;
                 }
@@ -1977,7 +1977,7 @@
             cropSelects.forEach(select => {
                 if (select) {
                     const currentValue = select.value;
-                    select.innerHTML = '<option value="">ÇÎÊÑ ãÍÕæá</option>' + 
+                    select.innerHTML = '<option value="">Ø§Ø®ØªØ± Ù…Ø­ØµÙˆÙ„</option>' + 
                         crops.map(c => `<option value="${c.value}">${c.value}</option>`).join('');
                     select.value = currentValue;
                 }
@@ -1987,7 +1987,7 @@
             const unitSelect = document.getElementById('product-unit');
             if (unitSelect) {
                 const currentValue = unitSelect.value;
-                unitSelect.innerHTML = '<option value="">ÇÎÊÑ ÇáæÍÏÉ</option>' + 
+                unitSelect.innerHTML = '<option value="">Ø§Ø®ØªØ± Ø§Ù„ÙˆØ­Ø¯Ø©</option>' + 
                     units.map(u => `<option value="${u.value}">${u.value}</option>`).join('');
                 unitSelect.value = currentValue;
             }
@@ -1996,7 +1996,7 @@
             const expenseCategorySelect = document.getElementById('expense-category');
             if (expenseCategorySelect) {
                 const currentValue = expenseCategorySelect.value;
-                expenseCategorySelect.innerHTML = '<option value="">ÇÎÊÑ äæÚ ÇáãÕÑæİ</option>' + 
+                expenseCategorySelect.innerHTML = '<option value="">Ø§Ø®ØªØ± Ù†ÙˆØ¹ Ø§Ù„Ù…ØµØ±ÙˆÙ</option>' + 
                     expenseCategories.map(ec => `<option value="${ec.value}">${ec.value}</option>`).join('');
                 expenseCategorySelect.value = currentValue;
             }
@@ -2050,22 +2050,22 @@
             const netMargin = totalSales > 0 ? (netProfit / totalSales * 100).toFixed(1) : 0;
             const breakEven = grossMargin > 0 ? (totalExpenses / (parseFloat(grossMargin) / 100)).toFixed(2) : 0;
             
-            document.getElementById('dash-total-sales').textContent = `${totalSales.toFixed(2)} Ì.ã`;
-            document.getElementById('dash-gross-profit').textContent = `${grossProfit.toFixed(2)} Ì.ã`;
-            document.getElementById('dash-total-expenses').textContent = `${totalExpenses.toFixed(2)} Ì.ã`;
-            document.getElementById('dash-net-profit').textContent = `${netProfit.toFixed(2)} Ì.ã`;
+            document.getElementById('dash-total-sales').textContent = `${totalSales.toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('dash-gross-profit').textContent = `${grossProfit.toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('dash-total-expenses').textContent = `${totalExpenses.toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('dash-net-profit').textContent = `${netProfit.toFixed(2)} Ø¬.Ù…`;
             document.getElementById('dash-gross-margin').textContent = `${grossMargin}%`;
             document.getElementById('dash-net-margin').textContent = `${netMargin}%`;
-            document.getElementById('dash-break-even').textContent = `${breakEven} Ì.ã`;
+            document.getElementById('dash-break-even').textContent = `${breakEven} Ø¬.Ù…`;
             
             // Update accounts in dashboard
             const accounts = calculateAccounts();
-            document.getElementById('dash-cash-balance').textContent = `${accounts['ÇáÕäÏæŞ'].toFixed(2)} Ì.ã`;
-            document.getElementById('dash-bank-balance').textContent = `${accounts['ÇáÈäß'].toFixed(2)} Ì.ã`;
-            document.getElementById('dash-vodafone-balance').textContent = `${accounts['İæÏÇİæä ßÇÔ'].toFixed(2)} Ì.ã`;
-            document.getElementById('dash-instapay-balance').textContent = `${accounts['ÇäÓÊÇ ÈÇí'].toFixed(2)} Ì.ã`;
-            document.getElementById('dash-customers-debt').textContent = `${accounts['ÇáÚãáÇÁ (Ğãã)'].toFixed(2)} Ì.ã`;
-            document.getElementById('dash-suppliers-debt').textContent = `${accounts['ÇáãæÑÏíä (Ğãã)'].toFixed(2)} Ì.ã`;
+            document.getElementById('dash-cash-balance').textContent = `${accounts['Ø§Ù„ØµÙ†Ø¯ÙˆÙ‚'].toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('dash-bank-balance').textContent = `${accounts['Ø§Ù„Ø¨Ù†Ùƒ'].toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('dash-vodafone-balance').textContent = `${accounts['ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´'].toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('dash-instapay-balance').textContent = `${accounts['Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ'].toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('dash-customers-debt').textContent = `${accounts['Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡ (Ø°Ù…Ù…)'].toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('dash-suppliers-debt').textContent = `${accounts['Ø§Ù„Ù…ÙˆØ±Ø¯ÙŠÙ† (Ø°Ù…Ù…)'].toFixed(2)} Ø¬.Ù…`;
         }
 
         // Update customers list
@@ -2074,7 +2074,7 @@
             const tbody = document.getElementById('customers-list');
             
             if (customers.length === 0) {
-                tbody.innerHTML = '<tr class="glass-table-row"><td colspan="6" class="px-4 py-8 text-center text-slate-400">áÇ íæÌÏ ÚãáÇÁ ÈÚÏ</td></tr>';
+                tbody.innerHTML = '<tr class="glass-table-row"><td colspan="6" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø¹Ù…Ù„Ø§Ø¡ Ø¨Ø¹Ø¯</td></tr>';
             } else {
                 tbody.innerHTML = customers.map(c => {
                     const crops = [c.crop1, c.crop2].filter(cr => cr).join(', ') || '-';
@@ -2089,9 +2089,9 @@
                             <td class="px-4 py-3 text-white">${crops}</td>
                             <td class="px-4 py-3 text-white">${c.address || '-'}</td>
                             <td class="px-4 py-3">
-                                <button onclick="editCustomer('${c.__backendId}')" class="glass-button-primary px-2 py-1 rounded-lg text-xs mr-1">??</button>
-                                <button onclick="newInvoiceForCustomer('${c.__backendId}')" class="glass-button-primary px-2 py-1 rounded-lg text-xs mr-1">??</button>
-                                <button onclick="confirmDeleteCustomer('${c.__backendId}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">???</button>
+                                <button onclick="editCustomer('${c.__backendId}')" class="glass-button-primary px-2 py-1 rounded-lg text-xs mr-1">âœï¸</button>
+                                <button onclick="newInvoiceForCustomer('${c.__backendId}')" class="glass-button-primary px-2 py-1 rounded-lg text-xs mr-1">ğŸ“„</button>
+                                <button onclick="confirmDeleteCustomer('${c.__backendId}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">ğŸ—‘ï¸</button>
                             </td>
                         </tr>
                     `;
@@ -2105,7 +2105,7 @@
             const tbody = document.getElementById('suppliers-list');
             
             if (suppliers.length === 0) {
-                tbody.innerHTML = '<tr class="glass-table-row"><td colspan="5" class="px-4 py-8 text-center text-slate-400">áÇ íæÌÏ ãæÑÏíä ÈÚÏ</td></tr>';
+                tbody.innerHTML = '<tr class="glass-table-row"><td colspan="5" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ù…ÙˆØ±Ø¯ÙŠÙ† Ø¨Ø¹Ø¯</td></tr>';
             } else {
                 tbody.innerHTML = suppliers.map(s => `
                     <tr class="glass-table-row">
@@ -2114,8 +2114,8 @@
                         <td class="px-4 py-3 text-white">${s.email || '-'}</td>
                         <td class="px-4 py-3 text-white">${s.address || '-'}</td>
                         <td class="px-4 py-3">
-                            <button onclick="editSupplier('${s.__backendId}')" class="glass-button-primary px-2 py-1 rounded-lg text-xs mr-1">??</button>
-                            <button onclick="confirmDeleteSupplier('${s.__backendId}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">???</button>
+                            <button onclick="editSupplier('${s.__backendId}')" class="glass-button-primary px-2 py-1 rounded-lg text-xs mr-1">âœï¸</button>
+                            <button onclick="confirmDeleteSupplier('${s.__backendId}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">ğŸ—‘ï¸</button>
                         </td>
                     </tr>
                 `).join('');
@@ -2128,7 +2128,7 @@
             const tbody = document.getElementById('products-list');
             
             if (products.length === 0) {
-                tbody.innerHTML = '<tr class="glass-table-row"><td colspan="7" class="px-4 py-8 text-center text-slate-400">áÇ ÊæÌÏ ãäÊÌÇÊ ÈÚÏ</td></tr>';
+                tbody.innerHTML = '<tr class="glass-table-row"><td colspan="7" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ù†ØªØ¬Ø§Øª Ø¨Ø¹Ø¯</td></tr>';
             } else {
                 tbody.innerHTML = products.map(p => `
                     <tr class="glass-table-row">
@@ -2139,8 +2139,8 @@
                         <td class="px-4 py-3 text-white">${p.cartonWholesalePrice.toFixed(2)}</td>
                         <td class="px-4 py-3 text-white ${(p.currentStock || 0) <= p.minStock ? 'text-red-400' : 'text-green-400'}">${(p.currentStock || 0).toFixed(2)}</td>
                         <td class="px-4 py-3">
-                            <button onclick="editProduct('${p.__backendId}')" class="glass-button-primary px-2 py-1 rounded-lg text-xs mr-1">??</button>
-                            <button onclick="confirmDeleteProduct('${p.__backendId}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">???</button>
+                            <button onclick="editProduct('${p.__backendId}')" class="glass-button-primary px-2 py-1 rounded-lg text-xs mr-1">âœï¸</button>
+                            <button onclick="confirmDeleteProduct('${p.__backendId}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">ğŸ—‘ï¸</button>
                         </td>
                     </tr>
                 `).join('');
@@ -2170,18 +2170,18 @@
             const tbody = document.getElementById('sales-list');
             
             if (invoiceList.length === 0) {
-                tbody.innerHTML = '<tr class="glass-table-row"><td colspan="6" class="px-4 py-8 text-center text-slate-400">áÇ ÊæÌÏ ãÈíÚÇÊ ÈÚÏ</td></tr>';
+                tbody.innerHTML = '<tr class="glass-table-row"><td colspan="6" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ø¨ÙŠØ¹Ø§Øª Ø¨Ø¹Ø¯</td></tr>';
             } else {
                 tbody.innerHTML = invoiceList.map(inv => `
                     <tr class="glass-table-row">
                         <td class="px-4 py-3 text-white">${inv.invoiceNumber}</td>
                         <td class="px-4 py-3 text-white">${new Date(inv.date).toLocaleDateString('ar-EG')}</td>
                         <td class="px-4 py-3 text-white">${inv.customerName}</td>
-                        <td class="px-4 py-3 text-white">${inv.total.toFixed(2)} Ì.ã</td>
+                        <td class="px-4 py-3 text-white">${inv.total.toFixed(2)} Ø¬.Ù…</td>
                         <td class="px-4 py-3 text-white">${inv.paymentMethod}</td>
                         <td class="px-4 py-3">
-                            <button onclick="viewInvoice('${inv.invoiceNumber}')" class="glass-button-primary px-2 py-1 rounded-lg text-xs mr-1">???</button>
-                            <button onclick="confirmReturnSale('${inv.invoiceNumber}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">??</button>
+                            <button onclick="viewInvoice('${inv.invoiceNumber}')" class="glass-button-primary px-2 py-1 rounded-lg text-xs mr-1">ğŸ‘ï¸</button>
+                            <button onclick="confirmReturnSale('${inv.invoiceNumber}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">â†©ï¸</button>
                         </td>
                     </tr>
                 `).join('');
@@ -2211,18 +2211,18 @@
             const tbody = document.getElementById('purchases-list');
             
             if (invoiceList.length === 0) {
-                tbody.innerHTML = '<tr class="glass-table-row"><td colspan="6" class="px-4 py-8 text-center text-slate-400">áÇ ÊæÌÏ ãÔÊÑíÇÊ ÈÚÏ</td></tr>';
+                tbody.innerHTML = '<tr class="glass-table-row"><td colspan="6" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ø´ØªØ±ÙŠØ§Øª Ø¨Ø¹Ø¯</td></tr>';
             } else {
                 tbody.innerHTML = invoiceList.map(inv => `
                     <tr class="glass-table-row">
                         <td class="px-4 py-3 text-white">${inv.invoiceNumber}</td>
                         <td class="px-4 py-3 text-white">${new Date(inv.date).toLocaleDateString('ar-EG')}</td>
                         <td class="px-4 py-3 text-white">${inv.supplierName}</td>
-                        <td class="px-4 py-3 text-white">${inv.total.toFixed(2)} Ì.ã</td>
+                        <td class="px-4 py-3 text-white">${inv.total.toFixed(2)} Ø¬.Ù…</td>
                         <td class="px-4 py-3 text-white">${inv.paymentMethod}</td>
                         <td class="px-4 py-3">
-                            <button onclick="viewPurchaseInvoice('${inv.invoiceNumber}')" class="glass-button-primary px-2 py-1 rounded-lg text-xs mr-1">???</button>
-                            <button onclick="confirmDeletePurchase('${inv.invoiceNumber}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">???</button>
+                            <button onclick="viewPurchaseInvoice('${inv.invoiceNumber}')" class="glass-button-primary px-2 py-1 rounded-lg text-xs mr-1">ğŸ‘ï¸</button>
+                            <button onclick="confirmDeletePurchase('${inv.invoiceNumber}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">ğŸ—‘ï¸</button>
                         </td>
                     </tr>
                 `).join('');
@@ -2235,17 +2235,17 @@
             const tbody = document.getElementById('expenses-list');
             
             if (expenses.length === 0) {
-                tbody.innerHTML = '<tr class="glass-table-row"><td colspan="6" class="px-4 py-8 text-center text-slate-400">áÇ ÊæÌÏ ãÕÑæİÇÊ ÈÚÏ</td></tr>';
+                tbody.innerHTML = '<tr class="glass-table-row"><td colspan="6" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…ØµØ±ÙˆÙØ§Øª Ø¨Ø¹Ø¯</td></tr>';
             } else {
                 tbody.innerHTML = expenses.map(e => `
                     <tr class="glass-table-row">
                         <td class="px-4 py-3 text-white">${new Date(e.date).toLocaleDateString('ar-EG')}</td>
                         <td class="px-4 py-3 text-white">${e.category}</td>
                         <td class="px-4 py-3 text-white">${e.description}</td>
-                        <td class="px-4 py-3 text-white">${e.amount.toFixed(2)} Ì.ã</td>
+                        <td class="px-4 py-3 text-white">${e.amount.toFixed(2)} Ø¬.Ù…</td>
                         <td class="px-4 py-3 text-white">${e.paymentMethod}</td>
                         <td class="px-4 py-3">
-                            <button onclick="confirmDeleteExpense('${e.__backendId}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">???</button>
+                            <button onclick="confirmDeleteExpense('${e.__backendId}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">ğŸ—‘ï¸</button>
                         </td>
                     </tr>
                 `).join('');
@@ -2259,14 +2259,14 @@
             
             const customerTbody = document.getElementById('customer-receivables-list');
             if (customers.length === 0) {
-                customerTbody.innerHTML = '<tr class="glass-table-row"><td colspan="3" class="px-4 py-8 text-center text-slate-400">áÇ ÊæÌÏ Ğãã</td></tr>';
+                customerTbody.innerHTML = '<tr class="glass-table-row"><td colspan="3" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ØªÙˆØ¬Ø¯ Ø°Ù…Ù…</td></tr>';
             } else {
                 customerTbody.innerHTML = customers.map(c => `
                     <tr class="glass-table-row">
                         <td class="px-4 py-3 text-white">${c.name}</td>
-                        <td class="px-4 py-3 text-red-400 font-bold">${c.currentDebt.toFixed(2)} Ì.ã</td>
+                        <td class="px-4 py-3 text-red-400 font-bold">${c.currentDebt.toFixed(2)} Ø¬.Ù…</td>
                         <td class="px-4 py-3">
-                            <button onclick="payDebt('customer', '${c.__backendId}')" class="glass-button-primary px-2 py-1 rounded-lg text-xs">?? ÓÏÇÏ</button>
+                            <button onclick="payDebt('customer', '${c.__backendId}')" class="glass-button-primary px-2 py-1 rounded-lg text-xs">ğŸ’° Ø³Ø¯Ø§Ø¯</button>
                         </td>
                     </tr>
                 `).join('');
@@ -2274,14 +2274,14 @@
             
             const supplierTbody = document.getElementById('supplier-payables-list');
             if (suppliers.length === 0) {
-                supplierTbody.innerHTML = '<tr class="glass-table-row"><td colspan="3" class="px-4 py-8 text-center text-slate-400">áÇ ÊæÌÏ Ğãã</td></tr>';
+                supplierTbody.innerHTML = '<tr class="glass-table-row"><td colspan="3" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ØªÙˆØ¬Ø¯ Ø°Ù…Ù…</td></tr>';
             } else {
                 supplierTbody.innerHTML = suppliers.map(s => `
                     <tr class="glass-table-row">
                         <td class="px-4 py-3 text-white">${s.name}</td>
-                        <td class="px-4 py-3 text-red-400 font-bold">${s.currentDebt.toFixed(2)} Ì.ã</td>
+                        <td class="px-4 py-3 text-red-400 font-bold">${s.currentDebt.toFixed(2)} Ø¬.Ù…</td>
                         <td class="px-4 py-3">
-                            <button onclick="payDebt('supplier', '${s.__backendId}')" class="glass-button-primary px-2 py-1 rounded-lg text-xs">?? ÓÏÇÏ</button>
+                            <button onclick="payDebt('supplier', '${s.__backendId}')" class="glass-button-primary px-2 py-1 rounded-lg text-xs">ğŸ’° Ø³Ø¯Ø§Ø¯</button>
                         </td>
                     </tr>
                 `).join('');
@@ -2294,17 +2294,17 @@
             const tbody = document.getElementById('payments-list');
             
             if (payments.length === 0) {
-                tbody.innerHTML = '<tr class="glass-table-row"><td colspan="6" class="px-4 py-8 text-center text-slate-400">áÇ ÊæÌÏ ÓÏÇÏÇÊ ÈÚÏ</td></tr>';
+                tbody.innerHTML = '<tr class="glass-table-row"><td colspan="6" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ØªÙˆØ¬Ø¯ Ø³Ø¯Ø§Ø¯Ø§Øª Ø¨Ø¹Ø¯</td></tr>';
             } else {
                 tbody.innerHTML = payments.map(p => `
                     <tr class="glass-table-row">
                         <td class="px-4 py-3 text-white">${new Date(p.date).toLocaleDateString('ar-EG')}</td>
-                        <td class="px-4 py-3 text-white">${p.type === 'customer_payment' ? 'ãä Úãíá' : 'áãæÑÏ'}</td>
+                        <td class="px-4 py-3 text-white">${p.type === 'customer_payment' ? 'Ù…Ù† Ø¹Ù…ÙŠÙ„' : 'Ù„Ù…ÙˆØ±Ø¯'}</td>
                         <td class="px-4 py-3 text-white">${p.entityName}</td>
-                        <td class="px-4 py-3 text-green-400 font-bold">${p.amount.toFixed(2)} Ì.ã</td>
+                        <td class="px-4 py-3 text-green-400 font-bold">${p.amount.toFixed(2)} Ø¬.Ù…</td>
                         <td class="px-4 py-3 text-white">${p.paymentMethod}</td>
                         <td class="px-4 py-3">
-                            <button onclick="confirmDeletePayment('${p.__backendId}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">???</button>
+                            <button onclick="confirmDeletePayment('${p.__backendId}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">ğŸ—‘ï¸</button>
                         </td>
                     </tr>
                 `).join('');
@@ -2318,15 +2318,15 @@
             
             const alertsDiv = document.getElementById('inventory-alerts');
             if (lowStockProducts.length === 0) {
-                alertsDiv.innerHTML = '<p class="text-slate-400 text-center py-4">áÇ ÊæÌÏ ÊäÈíåÇÊ</p>';
+                alertsDiv.innerHTML = '<p class="text-slate-400 text-center py-4">Ù„Ø§ ØªÙˆØ¬Ø¯ ØªÙ†Ø¨ÙŠÙ‡Ø§Øª</p>';
             } else {
                 alertsDiv.innerHTML = lowStockProducts.map(p => `
                     <div class="glass-card rounded-xl p-4 flex justify-between items-center mb-3">
                         <div>
                             <div class="text-white font-bold">${p.name}</div>
-                            <div class="text-slate-300 text-sm">ÇáßãíÉ ÇáÍÇáíÉ: ${(p.currentStock || 0).toFixed(2)} ${p.unit} (ÇáÍÏ ÇáÃÏäì: ${p.minStock})</div>
+                            <div class="text-slate-300 text-sm">Ø§Ù„ÙƒÙ…ÙŠØ© Ø§Ù„Ø­Ø§Ù„ÙŠØ©: ${(p.currentStock || 0).toFixed(2)} ${p.unit} (Ø§Ù„Ø­Ø¯ Ø§Ù„Ø£Ø¯Ù†Ù‰: ${p.minStock})</div>
                         </div>
-                        <div class="text-red-400 text-2xl">??</div>
+                        <div class="text-red-400 text-2xl">âš ï¸</div>
                     </div>
                 `).join('');
             }
@@ -2339,7 +2339,7 @@
                 movements.push({
                     date: s.date,
                     productName: s.productName,
-                    type: 'ãÈíÚÇÊ',
+                    type: 'Ù…Ø¨ÙŠØ¹Ø§Øª',
                     quantity: -s.quantity
                 });
             });
@@ -2348,7 +2348,7 @@
                 movements.push({
                     date: p.date,
                     productName: p.productName,
-                    type: 'ãÔÊÑíÇÊ',
+                    type: 'Ù…Ø´ØªØ±ÙŠØ§Øª',
                     quantity: p.quantity
                 });
             });
@@ -2357,7 +2357,7 @@
             
             const movementsTbody = document.getElementById('inventory-movements');
             if (movements.length === 0) {
-                movementsTbody.innerHTML = '<tr class="glass-table-row"><td colspan="5" class="px-4 py-8 text-center text-slate-400">áÇ ÊæÌÏ ÍÑßÇÊ ÈÚÏ</td></tr>';
+                movementsTbody.innerHTML = '<tr class="glass-table-row"><td colspan="5" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ØªÙˆØ¬Ø¯ Ø­Ø±ÙƒØ§Øª Ø¨Ø¹Ø¯</td></tr>';
             } else {
                 movementsTbody.innerHTML = movements.slice(0, 50).map(m => `
                     <tr class="glass-table-row">
@@ -2375,19 +2375,19 @@
         function updateAccounts() {
             const accounts = calculateAccounts();
             
-            document.getElementById('cash-balance').textContent = `${accounts['ÇáÕäÏæŞ'].toFixed(2)} Ì.ã`;
-            document.getElementById('bank-balance').textContent = `${accounts['ÇáÈäß'].toFixed(2)} Ì.ã`;
-            document.getElementById('vodafone-balance').textContent = `${accounts['İæÏÇİæä ßÇÔ'].toFixed(2)} Ì.ã`;
-            document.getElementById('instapay-balance').textContent = `${accounts['ÇäÓÊÇ ÈÇí'].toFixed(2)} Ì.ã`;
-            document.getElementById('customers-debt-balance').textContent = `${accounts['ÇáÚãáÇÁ (Ğãã)'].toFixed(2)} Ì.ã`;
-            document.getElementById('suppliers-debt-balance').textContent = `${accounts['ÇáãæÑÏíä (Ğãã)'].toFixed(2)} Ì.ã`;
+            document.getElementById('cash-balance').textContent = `${accounts['Ø§Ù„ØµÙ†Ø¯ÙˆÙ‚'].toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('bank-balance').textContent = `${accounts['Ø§Ù„Ø¨Ù†Ùƒ'].toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('vodafone-balance').textContent = `${accounts['ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´'].toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('instapay-balance').textContent = `${accounts['Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ'].toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('customers-debt-balance').textContent = `${accounts['Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡ (Ø°Ù…Ù…)'].toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('suppliers-debt-balance').textContent = `${accounts['Ø§Ù„Ù…ÙˆØ±Ø¯ÙŠÙ† (Ø°Ù…Ù…)'].toFixed(2)} Ø¬.Ù…`;
             
-            document.getElementById('cash-row').textContent = `${accounts['ÇáÕäÏæŞ'].toFixed(2)} Ì.ã`;
-            document.getElementById('bank-row').textContent = `${accounts['ÇáÈäß'].toFixed(2)} Ì.ã`;
-            document.getElementById('vodafone-row').textContent = `${accounts['İæÏÇİæä ßÇÔ'].toFixed(2)} Ì.ã`;
-            document.getElementById('instapay-row').textContent = `${accounts['ÇäÓÊÇ ÈÇí'].toFixed(2)} Ì.ã`;
-            document.getElementById('customers-debt-row').textContent = `${accounts['ÇáÚãáÇÁ (Ğãã)'].toFixed(2)} Ì.ã`;
-            document.getElementById('suppliers-debt-row').textContent = `${accounts['ÇáãæÑÏíä (Ğãã)'].toFixed(2)} Ì.ã`;
+            document.getElementById('cash-row').textContent = `${accounts['Ø§Ù„ØµÙ†Ø¯ÙˆÙ‚'].toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('bank-row').textContent = `${accounts['Ø§Ù„Ø¨Ù†Ùƒ'].toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('vodafone-row').textContent = `${accounts['ÙÙˆØ¯Ø§ÙÙˆÙ† ÙƒØ§Ø´'].toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('instapay-row').textContent = `${accounts['Ø§Ù†Ø³ØªØ§ Ø¨Ø§ÙŠ'].toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('customers-debt-row').textContent = `${accounts['Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡ (Ø°Ù…Ù…)'].toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('suppliers-debt-row').textContent = `${accounts['Ø§Ù„Ù…ÙˆØ±Ø¯ÙŠÙ† (Ø°Ù…Ù…)'].toFixed(2)} Ø¬.Ù…`;
         }
 
         // Update reports
@@ -2412,14 +2412,14 @@
             const netMargin = totalSales > 0 ? (netProfit / totalSales * 100).toFixed(1) : 0;
             const breakEven = grossMargin > 0 ? (totalExpenses / (parseFloat(grossMargin) / 100)).toFixed(2) : 0;
             
-            document.getElementById('income-sales').textContent = `${totalSales.toFixed(2)} Ì.ã`;
-            document.getElementById('income-cogs').textContent = `${costOfGoodsSold.toFixed(2)} Ì.ã`;
-            document.getElementById('income-gross').textContent = `${grossProfit.toFixed(2)} Ì.ã`;
-            document.getElementById('income-expenses').textContent = `${totalExpenses.toFixed(2)} Ì.ã`;
-            document.getElementById('income-net').textContent = `${netProfit.toFixed(2)} Ì.ã`;
+            document.getElementById('income-sales').textContent = `${totalSales.toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('income-cogs').textContent = `${costOfGoodsSold.toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('income-gross').textContent = `${grossProfit.toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('income-expenses').textContent = `${totalExpenses.toFixed(2)} Ø¬.Ù…`;
+            document.getElementById('income-net').textContent = `${netProfit.toFixed(2)} Ø¬.Ù…`;
             document.getElementById('gross-margin').textContent = `${grossMargin}%`;
             document.getElementById('net-margin').textContent = `${netMargin}%`;
-            document.getElementById('break-even').textContent = `${breakEven} Ì.ã`;
+            document.getElementById('break-even').textContent = `${breakEven} Ø¬.Ù…`;
         }
 
         // Update CRM
@@ -2430,9 +2430,9 @@
             
             document.getElementById('crm-total-customers').textContent = customers.length;
             document.getElementById('crm-active-customers').textContent = activeCustomers.length;
-            // åĞÇ ÇáÌÒÁ íõÖÇİ İí äåÇíÉ ÇáÜ <script> ÈÚÏ ÇáÓØÑ ÇáãŞØæÚ:
+           // Ù‡Ø°Ø§ Ø§Ù„Ø¬Ø²Ø¡ ÙŠÙØ¶Ø§Ù ÙÙŠ Ù†Ù‡Ø§ÙŠØ© Ø§Ù„Ù€ <script> Ø¨Ø¹Ø¯ Ø§Ù„Ø³Ø·Ø± Ø§Ù„Ù…Ù‚Ø·ÙˆØ¹:
 
-// ÅßãÇá updateCRM()
+// Ø¥ÙƒÙ…Ø§Ù„ updateCRM()
 document.getElementById('crm-potential-customers').textContent = potentialCustomers.length;
 
 // Update top customers
@@ -2442,18 +2442,18 @@ const topCustomers = activeCustomers
 
 const tbody = document.getElementById('crm-top-customers');
 if (topCustomers.length === 0) {
-    tbody.innerHTML = '<tr class="glass-table-row"><td colspan="5" class="px-4 py-8 text-center text-slate-400">áÇ ÊæÌÏ ÈíÇäÇÊ ÈÚÏ</td></tr>';
+    tbody.innerHTML = '<tr class="glass-table-row"><td colspan="5" class="px-4 py-8 text-center text-slate-400">Ù„Ø§ ØªÙˆØ¬Ø¯ Ø¨ÙŠØ§Ù†Ø§Øª Ø¨Ø¹Ø¯</td></tr>';
 } else {
     tbody.innerHTML = topCustomers.map(c => {
         const sales = allData.filter(s => s.type === 'sale' && s.customerId === c.__backendId);
         const lastContact = c.lastContact ? new Date(c.lastContact).toLocaleDateString('ar-EG') : '-';
-        const status = (c.totalPurchases || 0) > 0 ? '? äÔØ' : '?? ÛíÑ äÔØ';
+        const status = (c.totalPurchases || 0) > 0 ? 'âœ… Ù†Ø´Ø·' : 'â¸ï¸ ØºÙŠØ± Ù†Ø´Ø·';
         
         return `
             <tr class="glass-table-row">
                 <td class="px-4 py-3 text-white">${c.name}</td>
                 <td class="px-4 py-3 text-white">${sales.length}</td>
-                <td class="px-4 py-3 text-green-400 font-bold">${(c.totalPurchases || 0).toFixed(2)} Ì.ã</td>
+                <td class="px-4 py-3 text-green-400 font-bold">${(c.totalPurchases || 0).toFixed(2)} Ø¬.Ù…</td>
                 <td class="px-4 py-3 text-white">${lastContact}</td>
                 <td class="px-4 py-3 text-white">${status}</td>
             </tr>
@@ -2469,7 +2469,7 @@ function updateFollowUps() {
     
     const container = document.getElementById('crm-notes');
     if (followUps.length === 0) {
-        container.innerHTML = '<p class="text-slate-400 text-center py-4">áÇ ÊæÌÏ ãÊÇÈÚÇÊ ÈÚÏ</p>';
+        container.innerHTML = '<p class="text-slate-400 text-center py-4">Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…ØªØ§Ø¨Ø¹Ø§Øª Ø¨Ø¹Ø¯</p>';
     } else {
         container.innerHTML = followUps.slice(0, 20).map(f => `
             <div class="glass-card rounded-xl p-4 mb-3">
@@ -2478,10 +2478,10 @@ function updateFollowUps() {
                         <div class="text-white font-bold">${f.customerName}</div>
                         <div class="text-slate-300 text-sm">${new Date(f.date).toLocaleDateString('ar-EG')} - ${f.followUpType}</div>
                     </div>
-                    <button onclick="deleteFollowUp('${f.__backendId}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">???</button>
+                    <button onclick="deleteFollowUp('${f.__backendId}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">ğŸ—‘ï¸</button>
                 </div>
                 <div class="text-slate-300 text-sm">${f.notes}</div>
-                ${f.crop1 ? `<div class="text-green-400 text-xs mt-2">?? ${f.crop1}</div>` : ''}
+                ${f.crop1 ? `<div class="text-green-400 text-xs mt-2">ğŸŒ¾ ${f.crop1}</div>` : ''}
             </div>
         `).join('');
     }
@@ -2491,11 +2491,11 @@ function updateFollowUps() {
 function updateSettings() {
     const settings = allData.find(d => d.type === 'settings');
     if (settings) {
-        document.getElementById('setting-app-name').value = settings.appName || 'ãÓÇÚÏ ÍÓÇÈÇÊ';
+        document.getElementById('setting-app-name').value = settings.appName || 'Ù…Ø³Ø§Ø¹Ø¯ Ø­Ø³Ø§Ø¨Ø§Øª';
         document.getElementById('setting-company-name').value = settings.companyName || '';
         document.getElementById('setting-company-address').value = settings.companyAddress || '';
         document.getElementById('setting-company-phone').value = settings.companyPhone || '';
-        document.getElementById('setting-currency').value = settings.currency || 'Ì.ã';
+        document.getElementById('setting-currency').value = settings.currency || 'Ø¬.Ù…';
         document.getElementById('setting-tax-rate').value = settings.taxRate || 0;
     }
 }
@@ -2508,7 +2508,7 @@ function updateSettingsLists() {
     customerTypesDiv.innerHTML = customerTypes.map(ct => `
         <div class="flex justify-between items-center p-2 glass-table-row rounded-lg">
             <span class="text-white">${ct.value}</span>
-            <button onclick="deleteListItem('${ct.__backendId}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">???</button>
+            <button onclick="deleteListItem('${ct.__backendId}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">ğŸ—‘ï¸</button>
         </div>
     `).join('');
 
@@ -2518,7 +2518,7 @@ function updateSettingsLists() {
     cropsDiv.innerHTML = crops.map(c => `
         <div class="flex justify-between items-center p-2 glass-table-row rounded-lg">
             <span class="text-white">${c.value}</span>
-            <button onclick="deleteListItem('${c.__backendId}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">???</button>
+            <button onclick="deleteListItem('${c.__backendId}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">ğŸ—‘ï¸</button>
         </div>
     `).join('');
 
@@ -2528,7 +2528,7 @@ function updateSettingsLists() {
     unitsDiv.innerHTML = units.map(u => `
         <div class="flex justify-between items-center p-2 glass-table-row rounded-lg">
             <span class="text-white">${u.value}</span>
-            <button onclick="deleteListItem('${u.__backendId}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">???</button>
+            <button onclick="deleteListItem('${u.__backendId}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">ğŸ—‘ï¸</button>
         </div>
     `).join('');
 
@@ -2538,7 +2538,7 @@ function updateSettingsLists() {
     expenseCategoriesDiv.innerHTML = expenseCategories.map(ec => `
         <div class="flex justify-between items-center p-2 glass-table-row rounded-lg">
             <span class="text-white">${ec.value}</span>
-            <button onclick="deleteListItem('${ec.__backendId}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">???</button>
+            <button onclick="deleteListItem('${ec.__backendId}')" class="glass-button-secondary px-2 py-1 rounded-lg text-xs">ğŸ—‘ï¸</button>
         </div>
     `).join('');
 }
@@ -2594,22 +2594,22 @@ function exportBackup() {
     link.click();
     document.body.removeChild(link);
     URL.revokeObjectURL(url);
-    showMessage('Êã ÊÕÏíÑ ÇáäÓÎÉ ÇáÇÍÊíÇØíÉ ÈäÌÇÍ', 'success');
+    showMessage('ØªÙ… ØªØµØ¯ÙŠØ± Ø§Ù„Ù†Ø³Ø®Ø© Ø§Ù„Ø§Ø­ØªÙŠØ§Ø·ÙŠØ© Ø¨Ù†Ø¬Ø§Ø­', 'success');
 }
 
 // Edit customer
 function editCustomer(id) {
-    showMessage('æÙíİÉ ÇáÊÚÏíá ŞíÏ ÇáÊØæíÑ', 'info');
+    showMessage('ÙˆØ¸ÙŠÙØ© Ø§Ù„ØªØ¹Ø¯ÙŠÙ„ Ù‚ÙŠØ¯ Ø§Ù„ØªØ·ÙˆÙŠØ±', 'info');
 }
 
 // Edit supplier
 function editSupplier(id) {
-    showMessage('æÙíİÉ ÇáÊÚÏíá ŞíÏ ÇáÊØæíÑ', 'info');
+    showMessage('ÙˆØ¸ÙŠÙØ© Ø§Ù„ØªØ¹Ø¯ÙŠÙ„ Ù‚ÙŠØ¯ Ø§Ù„ØªØ·ÙˆÙŠØ±', 'info');
 }
 
 // Edit product
 function editProduct(id) {
-    showMessage('æÙíİÉ ÇáÊÚÏíá ŞíÏ ÇáÊØæíÑ', 'info');
+    showMessage('ÙˆØ¸ÙŠÙØ© Ø§Ù„ØªØ¹Ø¯ÙŠÙ„ Ù‚ÙŠØ¯ Ø§Ù„ØªØ·ÙˆÙŠØ±', 'info');
 }
 
 // New invoice for customer
@@ -2637,10 +2637,10 @@ function viewInvoice(invoiceNumber) {
     const sales = allData.filter(s => s.type === 'sale' && s.invoiceNumber === invoiceNumber);
     if (sales.length === 0) return;
     
-    let content = `<h3 class="text-xl font-bold mb-4">İÇÊæÑÉ ÑŞã: ${invoiceNumber}</h3>`;
-    content += `<p class="mb-2">ÇáÚãíá: ${sales[0].customerName}</p>`;
-    content += `<p class="mb-4">ÇáÊÇÑíÎ: ${new Date(sales[0].date).toLocaleDateString('ar-EG')}</p>`;
-    content += '<table class="w-full"><thead><tr><th class="text-right">ÇáãäÊÌ</th><th class="text-right">ÇáßãíÉ</th><th class="text-right">ÇáÓÚÑ</th><th class="text-right">ÇáÅÌãÇáí</th></tr></thead><tbody>';
+    let content = `<h3 class="text-xl font-bold mb-4">ÙØ§ØªÙˆØ±Ø© Ø±Ù‚Ù…: ${invoiceNumber}</h3>`;
+    content += `<p class="mb-2">Ø§Ù„Ø¹Ù…ÙŠÙ„: ${sales[0].customerName}</p>`;
+    content += `<p class="mb-4">Ø§Ù„ØªØ§Ø±ÙŠØ®: ${new Date(sales[0].date).toLocaleDateString('ar-EG')}</p>`;
+    content += '<table class="w-full"><thead><tr><th class="text-right">Ø§Ù„Ù…Ù†ØªØ¬</th><th class="text-right">Ø§Ù„ÙƒÙ…ÙŠØ©</th><th class="text-right">Ø§Ù„Ø³Ø¹Ø±</th><th class="text-right">Ø§Ù„Ø¥Ø¬Ù…Ø§Ù„ÙŠ</th></tr></thead><tbody>';
     
     let total = 0;
     sales.forEach(s => {
@@ -2648,9 +2648,9 @@ function viewInvoice(invoiceNumber) {
         total += s.total;
     });
     
-    content += `</tbody></table><p class="text-xl font-bold mt-4">ÇáÅÌãÇáí: ${total.toFixed(2)} Ì.ã</p>`;
+    content += `</tbody></table><p class="text-xl font-bold mt-4">Ø§Ù„Ø¥Ø¬Ù…Ø§Ù„ÙŠ: ${total.toFixed(2)} Ø¬.Ù…</p>`;
     
-    showModal('ÊİÇÕíá ÇáİÇÊæÑÉ', content, () => {});
+    showModal('ØªÙØ§ØµÙŠÙ„ Ø§Ù„ÙØ§ØªÙˆØ±Ø©', content, () => {});
 }
 
 // View purchase invoice
@@ -2658,10 +2658,10 @@ function viewPurchaseInvoice(invoiceNumber) {
     const purchases = allData.filter(p => p.type === 'purchase' && p.invoiceNumber === invoiceNumber);
     if (purchases.length === 0) return;
     
-    let content = `<h3 class="text-xl font-bold mb-4">İÇÊæÑÉ ÔÑÇÁ ÑŞã: ${invoiceNumber}</h3>`;
-    content += `<p class="mb-2">ÇáãæÑÏ: ${purchases[0].supplierName}</p>`;
-    content += `<p class="mb-4">ÇáÊÇÑíÎ: ${new Date(purchases[0].date).toLocaleDateString('ar-EG')}</p>`;
-    content += '<table class="w-full"><thead><tr><th class="text-right">ÇáãäÊÌ</th><th class="text-right">ÇáßãíÉ</th><th class="text-right">ÇáÓÚÑ</th><th class="text-right">ÇáÅÌãÇáí</th></tr></thead><tbody>';
+    let content = `<h3 class="text-xl font-bold mb-4">ÙØ§ØªÙˆØ±Ø© Ø´Ø±Ø§Ø¡ Ø±Ù‚Ù…: ${invoiceNumber}</h3>`;
+    content += `<p class="mb-2">Ø§Ù„Ù…ÙˆØ±Ø¯: ${purchases[0].supplierName}</p>`;
+    content += `<p class="mb-4">Ø§Ù„ØªØ§Ø±ÙŠØ®: ${new Date(purchases[0].date).toLocaleDateString('ar-EG')}</p>`;
+    content += '<table class="w-full"><thead><tr><th class="text-right">Ø§Ù„Ù…Ù†ØªØ¬</th><th class="text-right">Ø§Ù„ÙƒÙ…ÙŠØ©</th><th class="text-right">Ø§Ù„Ø³Ø¹Ø±</th><th class="text-right">Ø§Ù„Ø¥Ø¬Ù…Ø§Ù„ÙŠ</th></tr></thead><tbody>';
     
     let total = 0;
     purchases.forEach(p => {
@@ -2669,9 +2669,9 @@ function viewPurchaseInvoice(invoiceNumber) {
         total += p.total;
     });
     
-    content += `</tbody></table><p class="text-xl font-bold mt-4">ÇáÅÌãÇáí: ${total.toFixed(2)} Ì.ã</p>`;
+    content += `</tbody></table><p class="text-xl font-bold mt-4">Ø§Ù„Ø¥Ø¬Ù…Ø§Ù„ÙŠ: ${total.toFixed(2)} Ø¬.Ù…</p>`;
     
-    showModal('ÊİÇÕíá İÇÊæÑÉ ÇáÔÑÇÁ', content, () => {});
+    showModal('ØªÙØ§ØµÙŠÙ„ ÙØ§ØªÙˆØ±Ø© Ø§Ù„Ø´Ø±Ø§Ø¡', content, () => {});
 }
 
 // Confirm delete functions
@@ -2679,12 +2679,12 @@ async function confirmDeleteCustomer(id) {
     const item = allData.find(d => d.__backendId === id);
     if (!item) return;
     
-    showConfirmation('ÊÃßíÏ ÇáÍĞİ', `åá ÊÑíÏ ÍĞİ ÇáÚãíá "${item.name}"¿`, async () => {
+    showConfirmation('ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø­Ø°Ù', `Ù‡Ù„ ØªØ±ÙŠØ¯ Ø­Ø°Ù Ø§Ù„Ø¹Ù…ÙŠÙ„ "${item.name}"ØŸ`, async () => {
         const result = await window.dataSdk.delete(item);
         if (result.isOk) {
-            showMessage('Êã ÇáÍĞİ ÈäÌÇÍ', 'success');
+            showMessage('ØªÙ… Ø§Ù„Ø­Ø°Ù Ø¨Ù†Ø¬Ø§Ø­', 'success');
         } else {
-            showMessage('ÍÏË ÎØÃ ÃËäÇÁ ÇáÍĞİ', 'error');
+            showMessage('Ø­Ø¯Ø« Ø®Ø·Ø£ Ø£Ø«Ù†Ø§Ø¡ Ø§Ù„Ø­Ø°Ù', 'error');
         }
     });
 }
@@ -2693,12 +2693,12 @@ async function confirmDeleteSupplier(id) {
     const item = allData.find(d => d.__backendId === id);
     if (!item) return;
     
-    showConfirmation('ÊÃßíÏ ÇáÍĞİ', `åá ÊÑíÏ ÍĞİ ÇáãæÑÏ "${item.name}"¿`, async () => {
+    showConfirmation('ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø­Ø°Ù', `Ù‡Ù„ ØªØ±ÙŠØ¯ Ø­Ø°Ù Ø§Ù„Ù…ÙˆØ±Ø¯ "${item.name}"ØŸ`, async () => {
         const result = await window.dataSdk.delete(item);
         if (result.isOk) {
-            showMessage('Êã ÇáÍĞİ ÈäÌÇÍ', 'success');
+            showMessage('ØªÙ… Ø§Ù„Ø­Ø°Ù Ø¨Ù†Ø¬Ø§Ø­', 'success');
         } else {
-            showMessage('ÍÏË ÎØÃ ÃËäÇÁ ÇáÍĞİ', 'error');
+            showMessage('Ø­Ø¯Ø« Ø®Ø·Ø£ Ø£Ø«Ù†Ø§Ø¡ Ø§Ù„Ø­Ø°Ù', 'error');
         }
     });
 }
@@ -2707,56 +2707,56 @@ async function confirmDeleteProduct(id) {
     const item = allData.find(d => d.__backendId === id);
     if (!item) return;
     
-    showConfirmation('ÊÃßíÏ ÇáÍĞİ', `åá ÊÑíÏ ÍĞİ ÇáãäÊÌ "${item.name}"¿`, async () => {
+    showConfirmation('ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø­Ø°Ù', `Ù‡Ù„ ØªØ±ÙŠØ¯ Ø­Ø°Ù Ø§Ù„Ù…Ù†ØªØ¬ "${item.name}"ØŸ`, async () => {
         const result = await window.dataSdk.delete(item);
         if (result.isOk) {
-            showMessage('Êã ÇáÍĞİ ÈäÌÇÍ', 'success');
+            showMessage('ØªÙ… Ø§Ù„Ø­Ø°Ù Ø¨Ù†Ø¬Ø§Ø­', 'success');
         } else {
-            showMessage('ÍÏË ÎØÃ ÃËäÇÁ ÇáÍĞİ', 'error');
+            showMessage('Ø­Ø¯Ø« Ø®Ø·Ø£ Ø£Ø«Ù†Ø§Ø¡ Ø§Ù„Ø­Ø°Ù', 'error');
         }
     });
 }
 
 async function confirmDeleteExpense(id) {
-    showConfirmation('ÊÃßíÏ ÇáÍĞİ', 'åá ÊÑíÏ ÍĞİ åĞÇ ÇáãÕÑæİ¿', async () => {
+    showConfirmation('ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø­Ø°Ù', 'Ù‡Ù„ ØªØ±ÙŠØ¯ Ø­Ø°Ù Ù‡Ø°Ø§ Ø§Ù„Ù…ØµØ±ÙˆÙØŸ', async () => {
         const item = allData.find(d => d.__backendId === id);
         if (item) {
             const result = await window.dataSdk.delete(item);
             if (result.isOk) {
-                showMessage('Êã ÇáÍĞİ ÈäÌÇÍ', 'success');
+                showMessage('ØªÙ… Ø§Ù„Ø­Ø°Ù Ø¨Ù†Ø¬Ø§Ø­', 'success');
             } else {
-                showMessage('ÍÏË ÎØÃ ÃËäÇÁ ÇáÍĞİ', 'error');
+                showMessage('Ø­Ø¯Ø« Ø®Ø·Ø£ Ø£Ø«Ù†Ø§Ø¡ Ø§Ù„Ø­Ø°Ù', 'error');
             }
         }
     });
 }
 
 async function confirmDeletePayment(id) {
-    showConfirmation('ÊÃßíÏ ÇáÍĞİ', 'åá ÊÑíÏ ÍĞİ åĞÇ ÇáÓÏÇÏ¿', async () => {
+    showConfirmation('ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø­Ø°Ù', 'Ù‡Ù„ ØªØ±ÙŠØ¯ Ø­Ø°Ù Ù‡Ø°Ø§ Ø§Ù„Ø³Ø¯Ø§Ø¯ØŸ', async () => {
         const item = allData.find(d => d.__backendId === id);
         if (item) {
             const result = await window.dataSdk.delete(item);
             if (result.isOk) {
-                showMessage('Êã ÇáÍĞİ ÈäÌÇÍ', 'success');
+                showMessage('ØªÙ… Ø§Ù„Ø­Ø°Ù Ø¨Ù†Ø¬Ø§Ø­', 'success');
             } else {
-                showMessage('ÍÏË ÎØÃ ÃËäÇÁ ÇáÍĞİ', 'error');
+                showMessage('Ø­Ø¯Ø« Ø®Ø·Ø£ Ø£Ø«Ù†Ø§Ø¡ Ø§Ù„Ø­Ø°Ù', 'error');
             }
         }
     });
 }
 
 async function confirmDeletePurchase(invoiceNumber) {
-    showConfirmation('ÊÃßíÏ ÇáÍĞİ', 'åá ÊÑíÏ ÍĞİ İÇÊæÑÉ ÇáÔÑÇÁ¿', async () => {
+    showConfirmation('ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø­Ø°Ù', 'Ù‡Ù„ ØªØ±ÙŠØ¯ Ø­Ø°Ù ÙØ§ØªÙˆØ±Ø© Ø§Ù„Ø´Ø±Ø§Ø¡ØŸ', async () => {
         const purchases = allData.filter(p => p.type === 'purchase' && p.invoiceNumber === invoiceNumber);
         for (const purchase of purchases) {
             await window.dataSdk.delete(purchase);
         }
-        showMessage('Êã ÇáÍĞİ ÈäÌÇÍ', 'success');
+        showMessage('ØªÙ… Ø§Ù„Ø­Ø°Ù Ø¨Ù†Ø¬Ø§Ø­', 'success');
     });
 }
 
 async function confirmReturnSale(invoiceNumber) {
-    showConfirmation('ÊÃßíÏ ÇáÅÑÌÇÚ', 'åá ÊÑíÏ ÅÑÌÇÚ åĞå ÇáİÇÊæÑÉ¿', async () => {
+    showConfirmation('ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø¥Ø±Ø¬Ø§Ø¹', 'Ù‡Ù„ ØªØ±ÙŠØ¯ Ø¥Ø±Ø¬Ø§Ø¹ Ù‡Ø°Ù‡ Ø§Ù„ÙØ§ØªÙˆØ±Ø©ØŸ', async () => {
         const sales = allData.filter(s => s.type === 'sale' && s.invoiceNumber === invoiceNumber);
         
         for (const sale of sales) {
@@ -2771,7 +2771,7 @@ async function confirmReturnSale(invoiceNumber) {
             const customer = allData.find(c => c.__backendId === sale.customerId);
             if (customer) {
                 customer.totalPurchases = (customer.totalPurchases || 0) - sale.total;
-                if (sale.paymentMethod === 'ÂÌá') {
+                if (sale.paymentMethod === 'Ø¢Ø¬Ù„') {
                     customer.currentDebt = (customer.currentDebt || 0) - sale.total;
                 }
                 await window.dataSdk.update(customer);
@@ -2780,7 +2780,7 @@ async function confirmReturnSale(invoiceNumber) {
             await window.dataSdk.delete(sale);
         }
         
-        showMessage('Êã ÅÑÌÇÚ ÇáİÇÊæÑÉ ÈäÌÇÍ', 'success');
+        showMessage('ØªÙ… Ø¥Ø±Ø¬Ø§Ø¹ Ø§Ù„ÙØ§ØªÙˆØ±Ø© Ø¨Ù†Ø¬Ø§Ø­', 'success');
     });
 }
 
@@ -2789,7 +2789,7 @@ async function deleteFollowUp(id) {
     if (item) {
         const result = await window.dataSdk.delete(item);
         if (result.isOk) {
-            showMessage('Êã ÇáÍĞİ ÈäÌÇÍ', 'success');
+            showMessage('ØªÙ… Ø§Ù„Ø­Ø°Ù Ø¨Ù†Ø¬Ø§Ø­', 'success');
         }
     }
 }
@@ -2799,7 +2799,7 @@ async function deleteListItem(id) {
     if (item) {
         const result = await window.dataSdk.delete(item);
         if (result.isOk) {
-            showMessage('Êã ÇáÍĞİ ÈäÌÇÍ', 'success');
+            showMessage('ØªÙ… Ø§Ù„Ø­Ø°Ù Ø¨Ù†Ø¬Ø§Ø­', 'success');
         }
     }
 }
@@ -2809,7 +2809,7 @@ async function initializeDefaults() {
     // Add default customer types if none exist
     const customerTypes = allData.filter(d => d.type === 'customer_type');
     if (customerTypes.length === 0) {
-        const defaults = ['ÊÌÒÆÉ', 'ÊÇÌÑ', 'ãæÒÚ'];
+        const defaults = ['ØªØ¬Ø²Ø¦Ø©', 'ØªØ§Ø¬Ø±', 'Ù…ÙˆØ²Ø¹'];
         for (const value of defaults) {
             await window.dataSdk.create({ type: 'customer_type', value: value });
         }
@@ -2818,7 +2818,7 @@ async function initializeDefaults() {
     // Add default crops if none exist
     const crops = allData.filter(d => d.type === 'crop');
     if (crops.length === 0) {
-        const defaults = ['ŞãÍ', 'ĞÑÉ', 'ÃÑÒ', 'ŞØä', 'ÈØÇØÓ', 'ØãÇØã'];
+        const defaults = ['Ù‚Ù…Ø­', 'Ø°Ø±Ø©', 'Ø£Ø±Ø²', 'Ù‚Ø·Ù†', 'Ø¨Ø·Ø§Ø·Ø³', 'Ø·Ù…Ø§Ø·Ù…'];
         for (const value of defaults) {
             await window.dataSdk.create({ type: 'crop', value: value });
         }
@@ -2827,7 +2827,7 @@ async function initializeDefaults() {
     // Add default units if none exist
     const units = allData.filter(d => d.type === 'unit');
     if (units.length === 0) {
-        const defaults = ['ŞØÚÉ', 'ßíáæ', 'áÊÑ', 'Øä', 'ßÑÊæäÉ'];
+        const defaults = ['Ù‚Ø·Ø¹Ø©', 'ÙƒÙŠÙ„Ùˆ', 'Ù„ØªØ±', 'Ø·Ù†', 'ÙƒØ±ØªÙˆÙ†Ø©'];
         for (const value of defaults) {
             await window.dataSdk.create({ type: 'unit', value: value });
         }
@@ -2836,7 +2836,7 @@ async function initializeDefaults() {
     // Add default expense categories if none exist
     const expenseCategories = allData.filter(d => d.type === 'expense_category');
     if (expenseCategories.length === 0) {
-        const defaults = ['ÅíÌÇÑ', 'ßåÑÈÇÁ', 'ãíÇå', 'ÑæÇÊÈ', 'ÕíÇäÉ', 'äŞá', 'ÃÎÑì'];
+        const defaults = ['Ø¥ÙŠØ¬Ø§Ø±', 'ÙƒÙ‡Ø±Ø¨Ø§Ø¡', 'Ù…ÙŠØ§Ù‡', 'Ø±ÙˆØ§ØªØ¨', 'ØµÙŠØ§Ù†Ø©', 'Ù†Ù‚Ù„', 'Ø£Ø®Ø±Ù‰'];
         for (const value of defaults) {
             await window.dataSdk.create({ type: 'expense_category', value: value });
         }
